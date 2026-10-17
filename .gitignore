@@ -1,0 +1,60 @@
+# ==========================================
+# QuakeScope Repository .gitignore
+# Stage 3 Clean Repository Hygiene
+# ==========================================
+
+# Dependencies & Package Managers
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# Build & Compilation Outputs
+dist/
+**/dist/
+target/
+**/target/
+project/target/
+project/project/
+out/
+build/
+
+# Generated Screenshots (Stage 3 Mandatory Hygiene: Excluded from Git)
+screenshots/
+**/screenshots/
+
+# Raw Large Dataset (3.76 MB source query; download instructions in README)
+query.csv
+
+# Logs & Temporary Files
+*.log
+!output/quakescope_execution.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# IDE & Editor Configurations
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.bsp/
+.metals/
+.bloop/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/

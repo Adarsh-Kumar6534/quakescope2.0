@@ -1,0 +1,29 @@
+[
+    {
+      "category": "Shallow (0-70 km)",
+      "count": 14800,
+      "percentage": 75.17,
+      "min_depth_km": 0.0,
+      "max_depth_km": 70.0,
+      "avg_depth_km": 21.1,
+      "avg_mag": 4.48
+    },
+    {
+      "category": "Intermediate (70-300 km)",
+      "count": 3768,
+      "percentage": 19.14,
+      "min_depth_km": 70.0,
+      "max_depth_km": 299.9,
+      "avg_depth_km": 134.3,
+      "avg_mag": 4.39
+    },
+    {
+      "category": "Deep (>300 km)",
+      "count": 1120,
+      "percentage": 5.69,
+      "min_depth_km": 300.5,
+      "max_depth_km": 669.6,
+      "avg_depth_km": 511.96,
+      "avg_mag": 4.36
+    }
+]

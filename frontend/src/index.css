@@ -1,0 +1,425 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --bg-base: #040711;
+
+    /* Shared Liquid Glass Material System Tokens */
+    --glass-surface-subtle: rgba(16, 27, 48, 0.20);
+    --glass-surface: rgba(16, 27, 48, 0.30);
+    --glass-surface-hero: rgba(16, 27, 48, 0.28);
+    --glass-surface-chart: rgba(16, 27, 48, 0.32);
+    --glass-surface-elevated: rgba(14, 23, 44, 0.50);
+    --glass-surface-modal: rgba(10, 18, 36, 0.72);
+    --glass-surface-inset: rgba(255, 255, 255, 0.04);
+    --glass-surface-hover: rgba(255, 255, 255, 0.07);
+
+    /* Blur & Saturation */
+    --glass-blur-sm: 12px;
+    --glass-blur: 22px;
+    --glass-blur-lg: 28px;
+    --glass-saturate: 145%;
+
+    /* Fine Border & Specular Radiance */
+    --glass-border: rgba(190, 220, 255, 0.14);
+    --glass-border-subtle: rgba(190, 220, 255, 0.08);
+    --glass-border-specular: rgba(255, 255, 255, 0.28);
+    --glass-border-active: rgba(56, 189, 248, 0.40);
+
+    /* Depth Shadows & Inset Highlights */
+    --glass-shadow: 0 12px 35px -8px rgba(0, 0, 0, 0.45);
+    --glass-shadow-elevated: 0 24px 60px -12px rgba(0, 0, 0, 0.70);
+    --glass-inset-highlight: inset 0 1px 0 0 rgba(255, 255, 255, 0.22);
+    --glass-inset-subtle: inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+
+    /* Atmospheric Environmental Accents */
+    --accent-cyan: #38bdf8;
+    --accent-teal: #14b8a6;
+    --accent-electric: #0284c7;
+    --accent-violet: #a855f7;
+    --accent-indigo: #6366f1;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* 1. Continuous Page-Level Environmental Background */
+.seismic-atmosphere {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    /* High-altitude electric cyan aurora curtain (top-left, illuminating header and KPI cards) */
+    radial-gradient(ellipse 1200px 600px at 15% 0%, rgba(6, 182, 212, 0.35), transparent 70%),
+    /* Luminous electric teal field (spanning mid-left, behind Seismic Pulse & charts) */
+    radial-gradient(ellipse 1100px 700px at 18% 40%, rgba(20, 184, 166, 0.26), transparent 68%),
+    /* Broad electric blue field (upper-right, behind hero Kamchatka and executive cards) */
+    radial-gradient(ellipse 1100px 550px at 85% 8%, rgba(59, 130, 246, 0.30), transparent 70%),
+    /* Mid-level ethereal violet atmosphere (mid-right, behind Activity charts & Map) */
+    radial-gradient(ellipse 1250px 750px at 88% 52%, rgba(168, 85, 247, 0.24), transparent 70%),
+    /* Abyssal indigo tectonic mantle wash (lower-left, behind ML Insights & tables) */
+    radial-gradient(ellipse 1100px 700px at 15% 82%, rgba(99, 102, 241, 0.28), transparent 72%),
+    /* Deep violet-indigo mantle floor (lower-right, behind footer) */
+    radial-gradient(ellipse 900px 500px at 80% 92%, rgba(147, 51, 234, 0.20), transparent 70%),
+    /* Continuous oceanic midnight navy foundation */
+    linear-gradient(180deg, #040711 0%, #060a17 25%, #070d1e 50%, #060b18 75%, #040712 100%);
+}
+
+/* Subtle Topographic Seismographic Waveform Contours */
+.seismic-topography {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.045;
+  background-image: 
+    radial-gradient(circle at 50% 50%, transparent 0%, transparent 40%, #ffffff 41%, transparent 42%),
+    radial-gradient(circle at 20% 80%, transparent 0%, transparent 30%, #38bdf8 31%, transparent 32%),
+    radial-gradient(circle at 80% 20%, transparent 0%, transparent 35%, #a855f7 36%, transparent 37%);
+  background-size: 180px 180px, 240px 240px, 300px 300px;
+}
+
+/* Precision Observatory Measurement Grid */
+.seismic-grid-pattern {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, #000 45%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, #000 45%, transparent 100%);
+}
+
+/* 2. Unified Transparent Liquid Glass Hierarchy */
+
+/* Grade 1: Floating Glass Header & Navigation */
+.glass-nav {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%), var(--glass-surface-subtle);
+  backdrop-filter: blur(var(--glass-blur-lg)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg)) saturate(var(--glass-saturate));
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 
+    0 8px 32px 0 rgba(0, 0, 0, 0.35),
+    var(--glass-inset-highlight);
+}
+
+/* Grade 2: Hero Stage / Seismic Pulse Interactive Canvas */
+.glass-hero {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%), var(--glass-surface-hero);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  border: 1px solid var(--glass-border);
+  border-top: 1px solid var(--glass-border-specular);
+  border-radius: 1.25rem;
+  box-shadow: 
+    var(--glass-shadow),
+    var(--glass-inset-highlight);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Grade 3: Editorial Metric Cards (Primary Monumental Anchor) */
+.glass-card-primary {
+  background: linear-gradient(145deg, rgba(56, 189, 248, 0.08) 0%, rgba(255, 255, 255, 0.015) 100%), var(--glass-surface);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  border-top: 1px solid var(--glass-border-specular);
+  border-radius: 1.125rem;
+  box-shadow: 
+    var(--glass-shadow),
+    var(--glass-inset-highlight),
+    0 0 20px -5px rgba(56, 189, 248, 0.15);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-primary:hover {
+  border-color: rgba(56, 189, 248, 0.42);
+  border-top-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 
+    0 16px 45px -8px rgba(0, 0, 0, 0.55),
+    var(--glass-inset-highlight),
+    0 0 28px -4px rgba(56, 189, 248, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Grade 4: Standard Editorial Metric Module */
+.glass-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0.01) 100%), var(--glass-surface);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  border: 1px solid var(--glass-border);
+  border-top: 1px solid var(--glass-border-specular);
+  border-radius: 1.125rem;
+  box-shadow: 
+    var(--glass-shadow),
+    var(--glass-inset-subtle);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(190, 220, 255, 0.24);
+  border-top-color: rgba(255, 255, 255, 0.38);
+  box-shadow: 
+    0 16px 40px -8px rgba(0, 0, 0, 0.50),
+    var(--glass-inset-highlight);
+  transform: translateY(-2px);
+}
+
+/* Grade 5: Analytical Chart & Table Panels (Calmer, Translucent, High-Contrast) */
+.glass-panel-chart {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.008) 100%), var(--glass-surface-chart);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  border: 1px solid var(--glass-border);
+  border-top: 1px solid var(--glass-border-specular);
+  border-radius: 1.25rem;
+  box-shadow: 
+    var(--glass-shadow),
+    var(--glass-inset-subtle);
+}
+
+/* Grade 6: Elevated Modals & Floating Overlays */
+.glass-panel-elevated {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.015) 100%), var(--glass-surface-modal);
+  backdrop-filter: blur(var(--glass-blur-lg)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg)) saturate(var(--glass-saturate));
+  border: 1px solid rgba(190, 220, 255, 0.22);
+  border-top: 1px solid var(--glass-border-specular);
+  border-radius: 1.25rem;
+  box-shadow: 
+    var(--glass-shadow-elevated),
+    var(--glass-inset-highlight);
+}
+
+/* Grade 7: Translucent Sub-Panels (Replaces Opaque Nested Fills) */
+.glass-sub-card {
+  background: var(--glass-surface-inset);
+  border: 1px solid var(--glass-border-subtle);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.glass-sub-card:hover {
+  background: var(--glass-surface-hover);
+  border-color: var(--glass-border);
+}
+
+/* Grade 8: Interactive Glass Controls & Scrubber Pills */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.10);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-pill:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.20);
+  border-top-color: rgba(255, 255, 255, 0.30);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   Apple macOS Liquid Glass Material System (Pure Specular Acrylic)
+   ========================================================================== */
+.liquid-glass-card {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.07) 45%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  backdrop-filter: blur(45px) saturate(210%) contrast(108%);
+  -webkit-backdrop-filter: blur(45px) saturate(210%) contrast(108%);
+  border-radius: 28px;
+  border: 1.5px solid rgba(255, 255, 255, 0.40);
+  box-shadow:
+    /* Top specular bevel rim reflection */
+    inset 0 2px 1.5px 0 rgba(255, 255, 255, 0.75),
+    /* Bottom soft edge reflection */
+    inset 0 -1.5px 1.5px 0 rgba(255, 255, 255, 0.25),
+    /* Left rim */
+    inset 1.5px 0 1.5px 0 rgba(255, 255, 255, 0.35),
+    /* Ambient floating shadow */
+    0 24px 50px -12px rgba(0, 0, 0, 0.45);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.60);
+  box-shadow:
+    inset 0 2px 2px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1.5px 1.5px 0 rgba(255, 255, 255, 0.35),
+    0 28px 60px -12px rgba(0, 0, 0, 0.55);
+}
+
+.liquid-glass-pill {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border: 1.5px solid rgba(255, 255, 255, 0.48);
+  box-shadow:
+    inset 0 1.5px 1px 0 rgba(255, 255, 255, 0.75),
+    0 4px 14px rgba(0, 0, 0, 0.18);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-pill:hover {
+  background: rgba(255, 255, 255, 0.32);
+  border-color: rgba(255, 255, 255, 0.70);
+  box-shadow:
+    inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.90),
+    0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+.glass-pill-active {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.24) 0%, rgba(168, 85, 247, 0.24) 100%), rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  border-top: 1px solid rgba(255, 255, 255, 0.40);
+  box-shadow: 
+    0 4px 16px rgba(56, 189, 248, 0.22),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.32);
+  color: #ffffff;
+}
+
+.glass-input {
+  background: rgba(16, 27, 48, 0.35);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+  border: 1px solid var(--glass-border);
+  border-top: 1px solid var(--glass-border-specular);
+  color: #f1f5f9;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  border-color: rgba(56, 189, 248, 0.50);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.18);
+}
+
+/* Primary Glass Action Button */
+.btn-glass-primary {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.18) 0%, rgba(168, 85, 247, 0.18) 100%), rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-top: 1px solid rgba(255, 255, 255, 0.30);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-glass-primary:hover {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.28) 0%, rgba(168, 85, 247, 0.28) 100%), rgba(255, 255, 255, 0.08);
+  border-color: rgba(56, 189, 248, 0.55);
+  border-top-color: rgba(255, 255, 255, 0.42);
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.28);
+  transform: translateY(-1px);
+}
+
+.btn-glass-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Custom Scrollbar for macOS look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+/* Leaflet Container Customizations */
+.leaflet-container {
+  background: rgba(8, 13, 25, 0.75) !important;
+  font-family: inherit !important;
+  border-radius: 0.875rem;
+}
+.leaflet-popup-content-wrapper {
+  background: rgba(12, 20, 40, 0.85) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  color: #f8fafc !important;
+  border: 1px solid rgba(190, 220, 255, 0.22);
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 0.875rem !important;
+  box-shadow: 0 16px 40px -5px rgba(0, 0, 0, 0.8) !important;
+}
+.leaflet-popup-tip {
+  background: rgba(12, 20, 40, 0.85) !important;
+}
+.leaflet-bar a {
+  background-color: rgba(16, 27, 48, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  color: #cbd5e1 !important;
+}
+.leaflet-bar a:hover {
+  background-color: rgba(24, 38, 70, 0.90) !important;
+  color: #ffffff !important;
+}
+
+/* Fallback for browsers that do not support backdrop-filter */
+@supports not (backdrop-filter: blur(1px)) {
+  .glass-nav,
+  .glass-hero,
+  .glass-card,
+  .glass-card-primary,
+  .glass-panel-chart {
+    background: rgba(10, 18, 36, 0.92);
+  }
+  .glass-sub-card {
+    background: rgba(16, 27, 50, 0.85);
+  }
+  .glass-panel-elevated {
+    background: rgba(10, 18, 36, 0.96);
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

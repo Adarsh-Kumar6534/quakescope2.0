@@ -1,0 +1,14 @@
+year_month,event_count,avg_mag,max_mag,avg_depth_km,period_note
+2025-01,1504,4.451,7.1,71.0,Full Calendar Month
+2025-02,1486,4.41,7.6,71.75,Full Calendar Month
+2025-03,1341,4.401,7.7,87.93,Full Calendar Month
+2025-04,1420,4.45,6.9,81.51,Full Calendar Month
+2025-05,1339,4.459,7.4,80.14,Full Calendar Month
+2025-06,1267,4.431,6.6,81.2,Full Calendar Month
+2025-07,2838,4.506,8.8,53.15,Full Calendar Month
+2025-08,2329,4.445,7.5,54.6,Full Calendar Month
+2025-09,1709,4.478,7.8,64.47,Full Calendar Month
+2025-10,1579,4.501,7.6,72.03,Full Calendar Month
+2025-11,1393,4.475,6.8,80.08,Full Calendar Month
+2025-12,1432,4.413,7.6,82.13,Full Calendar Month
+2026-01,51,4.494,6.0,64.64,Endpoint (Single Day: Jan 1)

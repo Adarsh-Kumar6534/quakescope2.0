@@ -1,0 +1,106 @@
+[
+    {
+      "year_month": "2025-01",
+      "event_count": 1504,
+      "avg_mag": 4.451,
+      "max_mag": 7.1,
+      "avg_depth_km": 71.0,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-02",
+      "event_count": 1486,
+      "avg_mag": 4.41,
+      "max_mag": 7.6,
+      "avg_depth_km": 71.75,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-03",
+      "event_count": 1341,
+      "avg_mag": 4.401,
+      "max_mag": 7.7,
+      "avg_depth_km": 87.93,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-04",
+      "event_count": 1420,
+      "avg_mag": 4.45,
+      "max_mag": 6.9,
+      "avg_depth_km": 81.51,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-05",
+      "event_count": 1339,
+      "avg_mag": 4.459,
+      "max_mag": 7.4,
+      "avg_depth_km": 80.14,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-06",
+      "event_count": 1267,
+      "avg_mag": 4.431,
+      "max_mag": 6.6,
+      "avg_depth_km": 81.2,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-07",
+      "event_count": 2838,
+      "avg_mag": 4.506,
+      "max_mag": 8.8,
+      "avg_depth_km": 53.15,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-08",
+      "event_count": 2329,
+      "avg_mag": 4.445,
+      "max_mag": 7.5,
+      "avg_depth_km": 54.6,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-09",
+      "event_count": 1709,
+      "avg_mag": 4.478,
+      "max_mag": 7.8,
+      "avg_depth_km": 64.47,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-10",
+      "event_count": 1579,
+      "avg_mag": 4.501,
+      "max_mag": 7.6,
+      "avg_depth_km": 72.03,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-11",
+      "event_count": 1393,
+      "avg_mag": 4.475,
+      "max_mag": 6.8,
+      "avg_depth_km": 80.08,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2025-12",
+      "event_count": 1432,
+      "avg_mag": 4.413,
+      "max_mag": 7.6,
+      "avg_depth_km": 82.13,
+      "period_note": "Full Calendar Month"
+    },
+    {
+      "year_month": "2026-01",
+      "event_count": 51,
+      "avg_mag": 4.494,
+      "max_mag": 6.0,
+      "avg_depth_km": 64.64,
+      "period_note": "Endpoint (Single Day: Jan 1)"
+    }
+]

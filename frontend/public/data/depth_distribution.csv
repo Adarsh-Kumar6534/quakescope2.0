@@ -1,0 +1,4 @@
+category,count,percentage,min_depth_km,max_depth_km,avg_depth_km,avg_mag
+Shallow (0-70 km),14800,75.17,0.0,70.0,21.1,4.48
+Intermediate (70-300 km),3768,19.14,70.0,299.9,134.3,4.39
+Deep (>300 km),1120,5.69,300.5,669.6,511.96,4.36

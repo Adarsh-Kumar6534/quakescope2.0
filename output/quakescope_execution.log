@@ -1,0 +1,621 @@
+26/10/17 01:17:33 WARN Utils: Your hostname, ADARSH resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+26/10/17 01:17:33 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+================================================================================
+  QUAKESCOPE: DISTRIBUTED SEISMIC ANALYSIS & EARTHQUAKE PATTERN CLASSIFIER
+  Stage 1.1 — Corrected & Audited Spark Core, Spark SQL, & MLlib Engine (Scala)
+  INT315 — Cluster Computing CA2 Submission
+================================================================================
+26/10/17 01:17:33 INFO SparkContext: Running Spark version 3.5.6
+26/10/17 01:17:33 INFO SparkContext: OS info Linux, 6.6.87.2-microsoft-standard-WSL2, amd64
+26/10/17 01:17:33 INFO SparkContext: Java version 1.8.0_504
+26/10/17 01:17:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/17 01:17:34 INFO ResourceUtils: ==============================================================
+26/10/17 01:17:34 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/10/17 01:17:34 INFO ResourceUtils: ==============================================================
+26/10/17 01:17:34 INFO SparkContext: Submitted application: QuakeScope-SeismicEngine
+26/10/17 01:17:34 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/10/17 01:17:34 INFO ResourceProfile: Limiting resource is cpu
+26/10/17 01:17:34 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/10/17 01:17:34 INFO SecurityManager: Changing view acls to: adarsh
+26/10/17 01:17:34 INFO SecurityManager: Changing modify acls to: adarsh
+26/10/17 01:17:34 INFO SecurityManager: Changing view acls groups to: 
+26/10/17 01:17:34 INFO SecurityManager: Changing modify acls groups to: 
+26/10/17 01:17:34 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: adarsh; groups with view permissions: EMPTY; users with modify permissions: adarsh; groups with modify permissions: EMPTY
+26/10/17 01:17:34 INFO Utils: Successfully started service 'sparkDriver' on port 39891.
+26/10/17 01:17:34 INFO SparkEnv: Registering MapOutputTracker
+26/10/17 01:17:34 INFO SparkEnv: Registering BlockManagerMaster
+26/10/17 01:17:34 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/10/17 01:17:34 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/10/17 01:17:34 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/10/17 01:17:34 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-f1d8b12a-3475-4493-a694-ab3924bb72fd
+26/10/17 01:17:34 INFO MemoryStore: MemoryStore started with capacity 912.3 MiB
+26/10/17 01:17:34 INFO SparkEnv: Registering OutputCommitCoordinator
+26/10/17 01:17:34 INFO SparkContext: Added JAR file:/mnt/c/QuakeScope/target/scala-2.12/quakescope_2.12-1.0.jar at spark://10.255.255.254:39891/jars/quakescope_2.12-1.0.jar with timestamp 1792199853851
+26/10/17 01:17:34 INFO Executor: Starting executor ID driver on host 10.255.255.254
+26/10/17 01:17:34 INFO Executor: OS info Linux, 6.6.87.2-microsoft-standard-WSL2, amd64
+26/10/17 01:17:34 INFO Executor: Java version 1.8.0_504
+26/10/17 01:17:34 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+26/10/17 01:17:34 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@1bc425e7 for default.
+26/10/17 01:17:34 INFO Executor: Fetching spark://10.255.255.254:39891/jars/quakescope_2.12-1.0.jar with timestamp 1792199853851
+26/10/17 01:17:34 INFO TransportClientFactory: Successfully created connection to /10.255.255.254:39891 after 20 ms (0 ms spent in bootstraps)
+26/10/17 01:17:34 INFO Utils: Fetching spark://10.255.255.254:39891/jars/quakescope_2.12-1.0.jar to /tmp/spark-06d6b5a3-2344-4ed7-b86b-8334038623f5/userFiles-33114a0a-6d70-4527-bccc-e952c3b99f59/fetchFileTemp4240504104920594480.tmp
+26/10/17 01:17:34 INFO Executor: Adding file:/tmp/spark-06d6b5a3-2344-4ed7-b86b-8334038623f5/userFiles-33114a0a-6d70-4527-bccc-e952c3b99f59/quakescope_2.12-1.0.jar to class loader default
+26/10/17 01:17:34 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45153.
+26/10/17 01:17:34 INFO NettyBlockTransferService: Server created on 10.255.255.254:45153
+26/10/17 01:17:34 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/10/17 01:17:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.255.255.254, 45153, None)
+26/10/17 01:17:34 INFO BlockManagerMasterEndpoint: Registering block manager 10.255.255.254:45153 with 912.3 MiB RAM, BlockManagerId(driver, 10.255.255.254, 45153, None)
+26/10/17 01:17:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.255.255.254, 45153, None)
+26/10/17 01:17:34 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.255.255.254, 45153, None)
+
+################################################################################
+[1/8] ENVIRONMENT AND DATA INGESTION
+################################################################################
+  Spark Version       : 3.5.6
+  Scala Version       : version 2.12.18
+  Java Runtime        : 1.8.0_504 (Ubuntu)
+  Spark Master        : local[*] (Single-Node Local Engine; Scalable to Cluster)
+  Execution Time      : 2026-10-17 01:17:35
+  Target Dataset Path : /mnt/c/QuakeScope/query.csv
+  File Exists         : true
+  File Size           : 3.59 MB (3761342 bytes)
+
+--> Ingesting USGS Earthquake CSV with Schema Inference...
+  Initial Ingested Record Count : 19,705
+  Dataset Total Columns         : 22
+
+--> Ingested Schema:
+root
+ |-- time: timestamp (nullable = true)
+ |-- latitude: double (nullable = true)
+ |-- longitude: double (nullable = true)
+ |-- depth: double (nullable = true)
+ |-- mag: double (nullable = true)
+ |-- magType: string (nullable = true)
+ |-- nst: integer (nullable = true)
+ |-- gap: double (nullable = true)
+ |-- dmin: double (nullable = true)
+ |-- rms: double (nullable = true)
+ |-- net: string (nullable = true)
+ |-- id: string (nullable = true)
+ |-- updated: timestamp (nullable = true)
+ |-- place: string (nullable = true)
+ |-- type: string (nullable = true)
+ |-- horizontalError: double (nullable = true)
+ |-- depthError: double (nullable = true)
+ |-- magError: double (nullable = true)
+ |-- magNst: integer (nullable = true)
+ |-- status: string (nullable = true)
+ |-- locationSource: string (nullable = true)
+ |-- magSource: string (nullable = true)
+
+
+--> Sample Original Ingested Records (First 5 rows):
++-----------------------+--------+---------+-------+---+-------+--------------------------------------------+----------+
+|                   time|latitude|longitude|  depth|mag|magType|                                       place|      type|
++-----------------------+--------+---------+-------+---+-------+--------------------------------------------+----------+
+|2026-01-01 23:30:51.522|-15.4795| -76.3908|   10.0|4.2|     mb|                  132 km W of San Juan, Peru|earthquake|
+| 2026-01-01 23:27:18.12| 13.2479| 146.0834|   10.0|4.8|     mb|            133 km ESE of Yigo Village, Guam|earthquake|
+|2026-01-01 22:49:46.878|-21.6906| -68.5036|131.526|4.7|     mb|                 57 km SSW of Ollagüe, Chile|earthquake|
+|2026-01-01 22:13:04.383| 17.7176| 145.9978|120.325|4.5|     mb|278 km N of Saipan, Northern Mariana Islands|earthquake|
+|2026-01-01 21:35:02.491|-18.6924| 168.6565| 139.06|5.2|     mb|            111 km SSE of Port-Vila, Vanuatu|earthquake|
++-----------------------+--------+---------+-------+---+-------+--------------------------------------------+----------+
+only showing top 5 rows
+
+
+################################################################################
+[2/8] DATA QUALITY ASSESSMENT
+################################################################################
+--> Inspecting column-level null and missing counts across all 22 fields:
+  Column Name          |  Missing Count |  Missing % | Category
+----------------------------------------------------------------------
+  time                 |              0 |      0.00% | Essential
+  latitude             |              0 |      0.00% | Essential
+  longitude            |              0 |      0.00% | Essential
+  depth                |              0 |      0.00% | Essential
+  mag                  |              0 |      0.00% | Essential
+  magType              |              0 |      0.00% | Metadata / Administrative
+  nst                  |            157 |      0.80% | Quality Measurement (Optional)
+  gap                  |            161 |      0.82% | Quality Measurement (Optional)
+  dmin                 |            162 |      0.82% | Quality Measurement (Optional)
+  rms                  |              0 |      0.00% | Metadata / Administrative
+  net                  |              0 |      0.00% | Metadata / Administrative
+  id                   |              0 |      0.00% | Essential
+  updated              |              0 |      0.00% | Metadata / Administrative
+  place                |              0 |      0.00% | Metadata / Administrative
+  type                 |              0 |      0.00% | Metadata / Administrative
+  horizontalError      |            193 |      0.98% | Quality Measurement (Optional)
+  depthError           |              0 |      0.00% | Quality Measurement (Optional)
+  magError             |            257 |      1.30% | Quality Measurement (Optional)
+  magNst               |            187 |      0.95% | Quality Measurement (Optional)
+  status               |              0 |      0.00% | Metadata / Administrative
+  locationSource       |              0 |      0.00% | Metadata / Administrative
+  magSource            |              0 |      0.00% | Metadata / Administrative
+
+  Duplicate Event IDs Found      : 0
+  Exact Duplicate Records Found  : 0
+  Records with Invalid Coordinates (Lat/Lon) : 0
+  Records with Invalid Magnitude (Mag < 0)   : 0
+  Records with Physically Invalid Depth (<0) : 1
+
+--> Distinct Seismic Event Types in Raw Dataset:
++----------------+-----+----------+
+|type            |count|percentage|
++----------------+-----+----------+
+|earthquake      |19689|99.92     |
+|mining explosion|13   |0.07      |
+|landslide       |2    |0.01      |
+|explosion       |1    |0.01      |
++----------------+-----+----------+
+
+--> Distinct Magnitude Types (magType) in Raw Dataset (Top 10):
++-------+-----+----------+
+|magType|count|percentage|
++-------+-----+----------+
+|mb     |16784|85.18     |
+|mww    |1482 |7.52      |
+|ml     |529  |2.68      |
+|mwr    |409  |2.08      |
+|md     |401  |2.04      |
+|mw     |90   |0.46      |
+|mwb    |6    |0.03      |
+|mb_lg  |3    |0.02      |
+|ms_vx  |1    |0.01      |
++-------+-----+----------+
+
+
+################################################################################
+[3/8] DATA CLEANING & RECONCILIATION
+################################################################################
+Filtering Rules (Mutually Exclusive Audit Waterfall):
+  1. Deterministic Deduplication: Retain record with latest 'updated' timestamp per 'id'.
+  2. Essential Fields Check: 'id', 'time', 'latitude', 'longitude', 'depth', 'mag' must be non-null.
+  3. Timestamp Format Validation: Must parse to valid ISO-8601 UTC timestamp.
+  4. Coordinate Validation: Latitude in [-90, 90], Longitude in [-180, 180].
+  5. Magnitude Plausibility: Magnitude in [0.0, 10.0].
+  6. Subsurface Depth Constraint: Depth in [0.0, 1000.0] km (rejects subaerial quakes calculated above sea level).
+  7. Event Scope Filter: Retain tectonic 'earthquake'; exclude explosions and landslides.
+  8. Optional Telemetry Policy: Preserve records with missing station error metrics.
+
+  [Excluded Event Details: Subsurface Depth < 0.0 km]
++----------+----------------------+---------------+----------------+-----+----+----------------------------------+----------+
+|id        |time                  |latitude       |longitude       |depth|mag |place                             |type      |
++----------+----------------------+---------------+----------------+-----+----+----------------------------------+----------+
+|uu80122716|2025-11-17 23:39:39.59|41.577333333333|-109.89516666667|-2.39|3.67|4 km NW of Little America, Wyoming|earthquake|
++----------+----------------------+---------------+----------------+-----+----+----------------------------------+----------+
+
+
+===========================================================================
+  BEFORE-AND-AFTER DATA CLEANING RECONCILIATION TABLE
+===========================================================================
+  Original Ingested Rows                 :   19,705 (100.00%)
+  [-] Duplicate Rows Removed             :        0 (  0.00%)
+  [-] Missing Essential Fields           :        0 (  0.00%)
+  [-] Invalid Timestamps                 :        0 (  0.00%)
+  [-] Invalid Coordinates (Lat/Lon)      :        0 (  0.00%)
+  [-] Invalid Magnitude (<0 or >10)      :        0 (  0.00%)
+  [-] Physically Invalid Depth (<0 km)   :        1 (  0.01%)
+  [-] Excluded Non-Earthquake Types      :       16 (  0.08%)
+  Total Excluded / Removed Rows          :       17 (  0.09%)
+  [=] Cleaned Retained Earthquake Events :   19,688 ( 99.91%)
+  [i] Retained Records w/ Missing Opt.   :      268 (  1.36%)
+===========================================================================
+  [VERIFICATION] Reconciliation balances: 19,705 = 0 duplicates + 17 excluded + 19,688 retained.
+
+################################################################################
+[4/8] FEATURE ENGINEERING
+################################################################################
+26/10/17 01:17:45 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+  Engineered DataFrame Count : 19,688 records
+
+--> Feature Engineering Schema:
+root
+ |-- time: timestamp (nullable = true)
+ |-- latitude: double (nullable = true)
+ |-- longitude: double (nullable = true)
+ |-- depth: double (nullable = true)
+ |-- mag: double (nullable = true)
+ |-- magType: string (nullable = true)
+ |-- nst: integer (nullable = true)
+ |-- gap: double (nullable = true)
+ |-- dmin: double (nullable = true)
+ |-- rms: double (nullable = true)
+ |-- net: string (nullable = true)
+ |-- id: string (nullable = true)
+ |-- updated: timestamp (nullable = true)
+ |-- place: string (nullable = true)
+ |-- type: string (nullable = true)
+ |-- horizontalError: double (nullable = true)
+ |-- depthError: double (nullable = true)
+ |-- magError: double (nullable = true)
+ |-- magNst: integer (nullable = true)
+ |-- status: string (nullable = true)
+ |-- locationSource: string (nullable = true)
+ |-- magSource: string (nullable = true)
+ |-- event_timestamp: timestamp (nullable = true)
+ |-- event_date: date (nullable = true)
+ |-- year: integer (nullable = true)
+ |-- month: integer (nullable = true)
+ |-- year_month: string (nullable = true)
+ |-- day_of_month: integer (nullable = true)
+ |-- day_of_week: string (nullable = true)
+ |-- hour_of_day: integer (nullable = true)
+ |-- magnitude_category: string (nullable = false)
+ |-- depth_category: string (nullable = false)
+ |-- primary_region: string (nullable = true)
+ |-- mag_class_mllib: string (nullable = false)
+
+
+--> Sample Engineered Records (First 5 rows):
++------------+----------+----------+-----------+---+------------------+-----+------------------------+--------------+---------------+
+|          id|event_date|year_month|hour_of_day|mag|magnitude_category|depth|          depth_category|primary_region|mag_class_mllib|
++------------+----------+----------+-----------+---+------------------+-----+------------------------+--------------+---------------+
+|ak0251lyi1dl|2025-02-04|   2025-02|          4|4.0|   Light (4.0-4.9)| 12.6|       Shallow (0-70 km)|        Alaska|          Light|
+|ak0251m0a5o8|2025-02-04|   2025-02|          7|4.6|   Light (4.0-4.9)| 27.6|       Shallow (0-70 km)|        Alaska|          Light|
+|ak0252ksopkj|2025-02-25|   2025-02|         11|3.6|   Minor (3.5-3.9)| 98.4|Intermediate (70-300 km)|        Alaska|          Minor|
+|ak0252xy1w8g|2025-03-05|   2025-03|          6|3.5|   Minor (3.5-3.9)| 40.7|       Shallow (0-70 km)|        Alaska|          Minor|
+|ak0253b89ez8|2025-03-13|   2025-03|          9|4.0|   Light (4.0-4.9)| 12.1|       Shallow (0-70 km)|        Alaska|          Light|
++------------+----------+----------+-----------+---+------------------+-----+------------------------+--------------+---------------+
+only showing top 5 rows
+
+
+################################################################################
+[5/8] SPARK CORE AND SPARK SQL ANALYTICS
+################################################################################
+
+--- [Metric 1 & 2 & 3] Key Performance Indicators (KPIs) ---
+  Total Cleaned Earthquake Events : 19,688
+  Magnitude Range [Min - Max]     : 3.5 - 8.8
+  Average Magnitude               : 4.456 (StdDev: 0.428)
+  Depth Range [Min - Max]         : 0.0 km - 669.556 km
+  Average Depth                   : 70.69 km (StdDev: 121.81 km)
+
+--- [Metric 4] Magnitude Category Distribution ---
++------------------+-----+-------+---------+----------+
+|magnitude_category|count|avg_mag|avg_depth|percentage|
++------------------+-----+-------+---------+----------+
+|Minor (3.5-3.9)   |1345 |3.7    |47.17    |6.83      |
+|Light (4.0-4.9)   |16207|4.41   |76.02    |82.32     |
+|Moderate (5.0-5.9)|1990 |5.23   |45.51    |10.11     |
+|Strong (6.0-6.9)  |130  |6.25   |39.86    |0.66      |
+|Major (>=7.0)     |16   |7.48   |26.4     |0.08      |
++------------------+-----+-------+---------+----------+
+
+
+--- [Metric 5] Depth Category Distribution ---
++------------------------+-----+------------+------------+------------+-------+----------+
+|depth_category          |count|min_depth_km|max_depth_km|avg_depth_km|avg_mag|percentage|
++------------------------+-----+------------+------------+------------+-------+----------+
+|Shallow (0-70 km)       |14800|0.0         |70.0        |21.1        |4.48   |75.17     |
+|Intermediate (70-300 km)|3768 |70.0        |299.9       |134.3       |4.39   |19.14     |
+|Deep (>300 km)          |1120 |300.5       |669.6       |511.96      |4.36   |5.69      |
++------------------------+-----+------------+------------+------------+-------+----------+
+
+
+--- [Metric 6] Monthly Event Counts & Magnitude Statistics ---
+  Note: '2026-01' represents a single-day endpoint (Jan 1, 2026), not a full calendar month.
++----------+-----------+-------+-------+------------+----------------------------+
+|year_month|event_count|avg_mag|max_mag|avg_depth_km|period_note                 |
++----------+-----------+-------+-------+------------+----------------------------+
+|2025-01   |1504       |4.451  |7.1    |71.0        |Full Calendar Month         |
+|2025-02   |1486       |4.41   |7.6    |71.75       |Full Calendar Month         |
+|2025-03   |1341       |4.401  |7.7    |87.93       |Full Calendar Month         |
+|2025-04   |1420       |4.45   |6.9    |81.51       |Full Calendar Month         |
+|2025-05   |1339       |4.459  |7.4    |80.14       |Full Calendar Month         |
+|2025-06   |1267       |4.431  |6.6    |81.2        |Full Calendar Month         |
+|2025-07   |2838       |4.506  |8.8    |53.15       |Full Calendar Month         |
+|2025-08   |2329       |4.445  |7.5    |54.6        |Full Calendar Month         |
+|2025-09   |1709       |4.478  |7.8    |64.47       |Full Calendar Month         |
+|2025-10   |1579       |4.501  |7.6    |72.03       |Full Calendar Month         |
+|2025-11   |1393       |4.475  |6.8    |80.08       |Full Calendar Month         |
+|2025-12   |1432       |4.413  |7.6    |82.13       |Full Calendar Month         |
+|2026-01   |51         |4.494  |6.0    |64.64       |Endpoint (Single Day: Jan 1)|
++----------+-----------+-------+-------+------------+----------------------------+
+
+
+--- [Metric 7] Hourly Activity Distribution (00:00 to 23:00 UTC) ---
++-----------+-----------+-------+
+|hour_of_day|event_count|avg_mag|
++-----------+-----------+-------+
+|0          |812        |4.45   |
+|1          |844        |4.48   |
+|2          |842        |4.44   |
+|3          |896        |4.45   |
+|4          |880        |4.45   |
+|5          |824        |4.47   |
+|6          |791        |4.45   |
+|7          |822        |4.46   |
+|8          |840        |4.44   |
+|9          |880        |4.46   |
+|10         |794        |4.45   |
+|11         |828        |4.47   |
+|12         |848        |4.44   |
+|13         |806        |4.45   |
+|14         |798        |4.49   |
+|15         |735        |4.44   |
+|16         |791        |4.48   |
+|17         |778        |4.46   |
+|18         |754        |4.45   |
+|19         |786        |4.46   |
+|20         |796        |4.46   |
+|21         |789        |4.44   |
+|22         |865        |4.44   |
+|23         |889        |4.46   |
++-----------+-----------+-------+
+
+
+--- [Metric 8] Top 15 Most Active Seismic Regions ---
++-----------------------------+-----------+-------+-------+------------+-------------+
+|primary_region               |event_count|avg_mag|max_mag|avg_depth_km|pct_of_global|
++-----------------------------+-----------+-------+-------+------------+-------------+
+|Russia                       |4090       |4.51   |7.8    |32.6        |20.77        |
+|Indonesia                    |1432       |4.51   |6.7    |77.0        |7.27         |
+|Japan                        |1076       |4.53   |6.8    |47.5        |5.47         |
+|Alaska                       |1071       |3.99   |6.2    |37.6        |5.44         |
+|Papua New Guinea             |866        |4.56   |6.9    |50.8        |4.4          |
+|Philippines                  |800        |4.56   |7.4    |64.6        |4.06         |
+|Chile                        |570        |4.35   |6.4    |77.9        |2.9          |
+|Greece                       |531        |4.33   |6.2    |17.1        |2.7          |
+|Tonga                        |467        |4.57   |7.0    |162.4       |2.37         |
+|Argentina                    |349        |4.5    |6.4    |119.7       |1.77         |
+|south of the Fiji Islands    |349        |4.46   |6.6    |453.4       |1.77         |
+|Vanuatu                      |339        |4.58   |5.9    |97.9        |1.72         |
+|South Sandwich Islands region|292        |4.69   |6.1    |43.5        |1.48         |
+|Ethiopia                     |263        |4.47   |5.9    |10.1        |1.34         |
+|Peru                         |242        |4.49   |6.2    |91.0        |1.23         |
++-----------------------------+-----------+-------+-------+------------+-------------+
+only showing top 15 rows
+
+
+--- [Metric 9] Ten Strongest Recorded Earthquakes (2025 - Jan 2026) ---
++----------+----------+-----------------------+---+-------+------+--------------------------------------+--------------------------------------------+
+|        id|event_date|                   time|mag|magType| depth|                        primary_region|                                       place|
++----------+----------+-----------------------+---+-------+------+--------------------------------------+--------------------------------------------+
+|us6000qw60|2025-07-29|2025-07-29 23:24:52.483|8.8|    mww|  35.0|                     Russia Earthquake| 2025 Kamchatka Peninsula, Russia Earthquake|
+|us7000qx2g|2025-09-18|2025-09-18 18:58:14.939|7.8|    mww|  27.0|                                Russia|140 km E of Petropavlovsk-Kamchatsky, Russia|
+|us7000pn9s|2025-03-28|2025-03-28 06:20:52.715|7.7|    mww|  10.0|            Burma (Myanmar) Earthquake|   2025 Mandalay, Burma (Myanmar) Earthquake|
+|us6000rgf4|2025-10-10|2025-10-10 20:29:20.075|7.6|    mww| 5.639|                         Drake Passage|                               Drake Passage|
+|us7000pcdl|2025-02-08|2025-02-08 23:23:14.697|7.6|    mww|14.326|                        Cayman Islands|   210 km SSW of George Town, Cayman Islands|
+|us6000rtdt|2025-12-08|2025-12-08 14:15:09.896|7.6|    mww| 40.72|                      Japan Earthquake|    2025 Aomori Prefecture, Japan Earthquake|
+|us6000r2xq|2025-08-22|2025-08-22 02:16:18.246|7.5|    mww|  10.0|2025 Southern Drake Passage Earthquake|      2025 Southern Drake Passage Earthquake|
+|us7000pwkn|2025-05-02|2025-05-02 12:58:26.014|7.4|    mww|  10.0|         2025 Drake Passage Earthquake|               2025 Drake Passage Earthquake|
+|us7000qdyl|2025-07-20|2025-07-20 06:49:04.327|7.4|    mww|  34.0|                     Russia Earthquake|   2025 Eastern Kamchatka, Russia Earthquake|
+|us7000qvw5|2025-09-13|2025-09-13 02:37:56.761|7.4|    mww|  58.0|                                Russia|105 km E of Petropavlovsk-Kamchatsky, Russia|
++----------+----------+-----------------------+---+-------+------+--------------------------------------+--------------------------------------------+
+
+
+--- [Metric 10] Regional Seismological Depth Profile (Top 10 Regions) ---
++----------------+------------+-------------+-------------+------------+-------------+------------------+----------+
+|primary_region  |total_events|avg_magnitude|max_magnitude|avg_depth_km|shallow_count|intermediate_count|deep_count|
++----------------+------------+-------------+-------------+------------+-------------+------------------+----------+
+|Russia          |4090        |4.51         |7.8          |32.6        |3732         |338               |20        |
+|Indonesia       |1432        |4.51         |6.7          |77.0        |936          |445               |51        |
+|Japan           |1076        |4.53         |6.8          |47.5        |907          |148               |21        |
+|Alaska          |1071        |3.99         |6.2          |37.6        |913          |158               |0         |
+|Papua New Guinea|866         |4.56         |6.9          |50.8        |650          |206               |10        |
+|Philippines     |800         |4.56         |7.4          |64.6        |551          |222               |27        |
+|Chile           |570         |4.35         |6.4          |77.9        |267          |303               |0         |
+|Greece          |531         |4.33         |6.2          |17.1        |523          |8                 |0         |
+|Tonga           |467         |4.57         |7.0          |162.4       |230          |136               |101       |
+|Argentina       |349         |4.5          |6.4          |119.7       |138          |204               |7         |
++----------------+------------+-------------+-------------+------------+-------------+------------------+----------+
+
+
+--- [Metric 12] Spark SQL Query 1: Monthly Seismic Profile & Activity Trend ---
++----------+------------+-------------+-------------+-------------+------------+------------------+
+|year_month|total_quakes|min_magnitude|avg_magnitude|max_magnitude|avg_depth_km|major_events_count|
++----------+------------+-------------+-------------+-------------+------------+------------------+
+|2025-01   |1504        |3.5          |4.45         |7.1          |71.0        |7                 |
+|2025-02   |1486        |3.5          |4.41         |7.6          |71.75       |3                 |
+|2025-03   |1341        |3.5          |4.4          |7.7          |87.93       |12                |
+|2025-04   |1420        |3.5          |4.45         |6.9          |81.51       |12                |
+|2025-05   |1339        |3.5          |4.46         |7.4          |80.14       |14                |
+|2025-06   |1267        |3.5          |4.43         |6.6          |81.2        |9                 |
+|2025-07   |2838        |3.5          |4.51         |8.8          |53.15       |28                |
+|2025-08   |2329        |3.5          |4.45         |7.5          |54.6        |14                |
+|2025-09   |1709        |3.5          |4.48         |7.8          |64.47       |11                |
+|2025-10   |1579        |3.5          |4.5          |7.6          |72.03       |16                |
+|2025-11   |1393        |3.5          |4.47         |6.8          |80.08       |9                 |
+|2025-12   |1432        |3.5          |4.41         |7.6          |82.13       |10                |
+|2026-01   |51          |3.5          |4.49         |6.0          |64.64       |1                 |
++----------+------------+-------------+-------------+-------------+------------+------------------+
+
+
+--- [Metric 12] Spark SQL Query 2: Deep-Focus Seismic Hotspots (Depth > 300 km) ---
++-------------------------+----------------+-----------------+------------+-------------+-------------+
+|primary_region           |deep_quake_count|avg_deep_depth_km|max_depth_km|avg_magnitude|max_magnitude|
++-------------------------+----------------+-----------------+------------+-------------+-------------+
+|south of the Fiji Islands|287             |532.1            |645.1       |4.41         |6.6          |
+|Fiji                     |200             |570.8            |669.6       |4.32         |5.6          |
+|Fiji region              |174             |568.5            |655.0       |4.36         |5.6          |
+|Tonga                    |101             |474.3            |597.0       |4.31         |5.9          |
+|Indonesia                |51              |461.6            |619.7       |4.33         |5.3          |
+|Japan region             |51              |443.0            |580.2       |4.33         |5.6          |
+|Timor Leste              |47              |457.0            |562.8       |4.38         |5.9          |
+|Wallis and Futuna        |36              |400.4            |454.6       |4.43         |6.6          |
+|Philippines              |27              |525.0            |605.6       |4.35         |5.4          |
+|Kermadec Islands region  |22              |400.8            |571.3       |4.34         |4.9          |
++-------------------------+----------------+-----------------+------------+-------------+-------------+
+only showing top 10 rows
+
+
+--- [Metric 12] Spark SQL Query 3: High-Impact Seismic Events (Mag >= 6.5) ---
++----------+----------+---+------+--------+---------+----------------------------------------+--------------------------------------------+
+|        id|event_date|mag| depth|latitude|longitude|                          primary_region|                                       place|
++----------+----------+---+------+--------+---------+----------------------------------------+--------------------------------------------+
+|us6000qw60|2025-07-29|8.8|  35.0| 52.4948| 160.2395|                       Russia Earthquake| 2025 Kamchatka Peninsula, Russia Earthquake|
+|us7000qx2g|2025-09-18|7.8|  27.0| 53.1426| 160.7206|                                  Russia|140 km E of Petropavlovsk-Kamchatsky, Russia|
+|us7000pn9s|2025-03-28|7.7|  10.0|  22.011|  95.9363|              Burma (Myanmar) Earthquake|   2025 Mandalay, Burma (Myanmar) Earthquake|
+|us6000rgf4|2025-10-10|7.6| 5.639|-60.1875| -61.8164|                           Drake Passage|                               Drake Passage|
+|us7000pcdl|2025-02-08|7.6|14.326| 17.6506|  -82.395|                          Cayman Islands|   210 km SSW of George Town, Cayman Islands|
+|us6000rtdt|2025-12-08|7.6| 40.72| 40.9984| 142.1836|                        Japan Earthquake|    2025 Aomori Prefecture, Japan Earthquake|
+|us6000r2xq|2025-08-22|7.5|  10.0|-60.3187| -61.9221|  2025 Southern Drake Passage Earthquake|      2025 Southern Drake Passage Earthquake|
+|us7000pwkn|2025-05-02|7.4|  10.0|-56.8094| -68.1019|           2025 Drake Passage Earthquake|               2025 Drake Passage Earthquake|
+|us7000qdyl|2025-07-20|7.4|  34.0| 52.8301| 160.6816|                       Russia Earthquake|   2025 Eastern Kamchatka, Russia Earthquake|
+|us7000qvw5|2025-09-13|7.4|  58.0| 53.1969| 160.1901|                                  Russia|105 km E of Petropavlovsk-Kamchatsky, Russia|
+|us6000rfwz|2025-10-10|7.4|59.425|  7.2866| 126.6902|                             Philippines|            12 km E of Santiago, Philippines|
+|us7000qd1y|2025-07-16|7.3|  38.0| 54.5652|-160.4689|                       Alaska Earthquake|          2025 Sand Point, Alaska Earthquake|
+|us6000pi9w|2025-01-07|7.1|  10.0| 28.6036|  87.3781|2025 Southern Tibetan Plateau Earthquake|    2025 Southern Tibetan Plateau Earthquake|
+|us6000rsy1|2025-12-06|7.0|10.317| 60.3127|-139.5412|         2025 Hubbard Glacier Earthquake|             2025 Hubbard Glacier Earthquake|
+|us7000pntq|2025-03-30|7.0|  29.0|-20.3036|-174.0718|                                   Tonga|                  61 km SSE of Pangai, Tonga|
++----------+----------+---+------+--------+---------+----------------------------------------+--------------------------------------------+
+only showing top 15 rows
+
+
+################################################################################
+[6/8] WINDOW FUNCTION RANKING
+################################################################################
+Ranking Top 3 Strongest Earthquakes within the Top 5 Global Seismic Hotspots...
+Using Spark Window Function: Window.partitionBy('primary_region').orderBy(col('mag').desc)
++----------------+-------------+------------+----------+---+---------------+---------------------------------------------+
+|  primary_region|regional_rank|          id|event_date|mag|          depth|                                        place|
++----------------+-------------+------------+----------+---+---------------+---------------------------------------------+
+|          Alaska|            1|  us7000pllu|2025-03-21|6.2|           17.0|                    88 km SSE of Adak, Alaska|
+|          Alaska|            2|  us7000qe51|2025-07-20|6.2|           40.0|              91 km SSE of Sand Point, Alaska|
+|          Alaska|            3|ak2025xjbvhj|2025-11-27|6.0|69.433395385742|                 12 km WNW of Susitna, Alaska|
+|       Indonesia|            1|  us7000qcik|2025-07-14|6.7|         70.687|                180 km WSW of Tual, Indonesia|
+|       Indonesia|            2|  us7000re2g|2025-11-27|6.4|           17.0|             54 km WNW of Sinabang, Indonesia|
+|       Indonesia|            3|  us6000rhg5|2025-10-16|6.4|           18.0|             192 km WNW of Abepura, Indonesia|
+|           Japan|            1|  us6000rmea|2025-11-09|6.8|           18.0|                    122 km E of Yamada, Japan|
+|           Japan|            2|  us6000pjny|2025-01-13|6.8|           39.0|                  15 km SE of Miyazaki, Japan|
+|           Japan|            3|  us6000ruc4|2025-12-12|6.7|           19.0|                     117 km NE of Kuji, Japan|
+|Papua New Guinea|            1|  us6000q41n|2025-04-04|6.9|            9.0|        184 km ESE of Kimbe, Papua New Guinea|
+|Papua New Guinea|            2|  us6000rfb2|2025-10-07|6.6|           98.0|             17 km W of Lae, Papua New Guinea|
+|Papua New Guinea|            3|  us7000q0bm|2025-05-20|6.5|         16.819|       89 km ENE of Angoram, Papua New Guinea|
+|          Russia|            1|  us7000qx2g|2025-09-18|7.8|           27.0| 140 km E of Petropavlovsk-Kamchatsky, Russia|
+|          Russia|            2|  us7000qvw5|2025-09-13|7.4|           58.0| 105 km E of Petropavlovsk-Kamchatsky, Russia|
+|          Russia|            3|  us6000qw6q|2025-07-30|6.9|         36.622|125 km SE of Petropavlovsk-Kamchatsky, Russia|
++----------------+-------------+------------+----------+---+---------------+---------------------------------------------+
+
+
+################################################################################
+[7/8] SPARK MLLIB MODEL TRAINING AND EVALUATION
+################################################################################
+Supervised Pattern Classification Pipeline:
+  Algorithm         : DecisionTreeClassifier (Multiclass)
+  Target Label      : mag_class_mllib (Minor [<4.0], Light [4.0-4.9], Moderate_Plus [>=5.0])
+  Input Features    : latitude, longitude, depth
+  Feature Exclusion : 'mag', 'magType', station counts, and derivatives EXCLUDED to eliminate data leakage.
+  Partition Policy  : Split BEFORE fitting label indexer or transformers to eliminate pre-processing leakage.
+  Train/Test Split  : 80% Train, 20% Test (Deterministic Random Split with seed = 42L)
+
+  Training Records  : 15,861 (80.56%)
+  Test Records      : 3,827 (19.44%)
+
+  Target Class Index Mapping (Fit on Training Data Only):
+    Index 0 -> Light
+    Index 1 -> Moderate_Plus
+    Index 2 -> Minor
+
+--> Training Set Class Distribution:
++---------------+-----+-----+
+|mag_class_mllib|label|count|
++---------------+-----+-----+
+|Light          |0.0  |13025|
+|Moderate_Plus  |1.0  |1723 |
+|Minor          |2.0  |1113 |
++---------------+-----+-----+
+
+--> Test Set Class Distribution:
++---------------+-----+-----+
+|mag_class_mllib|label|count|
++---------------+-----+-----+
+|Light          |0.0  |3182 |
+|Moderate_Plus  |1.0  |413  |
+|Minor          |2.0  |232  |
++---------------+-----+-----+
+
+--> Hyperparameter exploration on training partition (maxDepth tuning)...
+    Candidate maxDepth = 3  | Validation F1 = 0.7950
+    Candidate maxDepth = 5  | Validation F1 = 0.7993
+    Candidate maxDepth = 7  | Validation F1 = 0.8018
+  Selected Optimal Hyperparameter: maxDepth = 7 (Validation F1: 0.8018)
+--> Fitting final DecisionTreeClassifier (maxDepth = 7) on full training dataset...
+  Decision Tree Model Trained Successfully! (Tree Depth: 7, Total Nodes: 113)
+--> Evaluating predictions on held-out test split...
+
+======================================================================
+  SPARK MLLIB MODEL EVALUATION METRICS (HELD-OUT TEST SET)
+======================================================================
+  Test Accuracy               : 0.8607 (86.07%)
+  Majority-Class Baseline     : 0.8315 (83.15%)
+  Balanced Accuracy           : 0.6204 (62.04%)
+  Weighted Precision          : 0.8338
+  Weighted Recall             : 0.8607
+  Weighted F1 Score           : 0.8157
+  Macro-Averaged F1           : 0.5702
+======================================================================
+
+--> Detailed Class-Level Performance:
+  Class Name      | Class Index |  Precision |     Recall |   F1-Score
+----------------------------------------------------------------------
+  Light           |           0 |     0.8786 |     0.9692 |     0.9217
+  Moderate_Plus   |           1 |     0.5833 |     0.0169 |     0.0329
+  Minor           |           2 |     0.6656 |     0.8750 |     0.7561
+
+--> Labeled Confusion Matrix (Rows = Actual Labels, Columns = Predicted Labels):
+  Actual \ Pred    |          Light  Moderate_Plus          Minor
+  -----------------------------------------------------------------
+  Light            |           3084              4             94
+  Moderate_Plus    |            398              7              8
+  Minor            |             28              1            203
+
+################################################################################
+[8/8] EXPORT AND FINAL VALIDATION
+################################################################################
+--> Exporting clean JSON and CSV analytical assets for dashboard...
+
+--> Rigorously Validating Exported Static Assets (Content & Syntax Parsing):
+  Filename                       | Type   | Status   | Size (Bytes) | Validation Note
+-------------------------------------------------------------------------------------
+  kpis_and_cleaning.json         | JSON   | VALID    |          986 | Validated Jackson Syntax Tree
+  monthly_trends.json            | JSON   | VALID    |         2461 | Validated Jackson Syntax Tree
+  magnitude_distribution.json    | JSON   | VALID    |          727 | Validated Jackson Syntax Tree
+  depth_distribution.json        | JSON   | VALID    |          629 | Validated Jackson Syntax Tree
+  top_regions.json               | JSON   | VALID    |        46530 | Validated Jackson Syntax Tree
+  strongest_events.json          | JSON   | VALID    |         2712 | Validated Jackson Syntax Tree
+  hourly_distribution.json       | JSON   | VALID    |         1984 | Validated Jackson Syntax Tree
+  mllib_metrics.json             | JSON   | VALID    |         1185 | Validated Jackson Syntax Tree
+  monthly_trends.csv             | CSV    | VALID    |          702 | Validated 13 data rows (6 cols)
+  magnitude_distribution.csv     | CSV    | VALID    |          228 | Validated 5 data rows (5 cols)
+  depth_distribution.csv         | CSV    | VALID    |          228 | Validated 3 data rows (7 cols)
+  top_regions.csv                | CSV    | VALID    |        10005 | Validated 269 data rows (6 cols)
+  strongest_events.csv           | CSV    | VALID    |         1233 | Validated 10 data rows (8 cols)
+
+================================================================================
+  [SUCCESS] QuakeScope Core Engine Completed All 8 Stages Successfully!
+  Total Ingested Records    : 19,705
+  Final Cleaned Earthquakes : 19,688
+  MLlib Model Test Accuracy : 86.07% (Majority Baseline: 83.15%)
+  MLlib Macro F1-Score      : 0.5702 (Weighted F1: 0.8157)
+  Exported Dashboard Assets : 13 verified files in output/dashboard/
+  Total Processing Time     : 20.50 seconds
+================================================================================
+
+26/10/17 01:18:04 WARN Executor: Issue communicating with driver in heartbeater
+org.apache.spark.rpc.RpcTimeoutException: Futures timed out after [10000 milliseconds]. This timeout is controlled by spark.executor.heartbeatInterval
+	at org.apache.spark.rpc.RpcTimeout.org$apache$spark$rpc$RpcTimeout$$createRpcTimeoutException(RpcTimeout.scala:47)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:62)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:58)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:76)
+	at org.apache.spark.rpc.RpcEndpointRef.askSync(RpcEndpointRef.scala:101)
+	at org.apache.spark.executor.Executor.reportHeartBeat(Executor.scala:1236)
+	at org.apache.spark.executor.Executor.$anonfun$heartbeater$1(Executor.scala:296)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.Heartbeater$$anon$1.run(Heartbeater.scala:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.TimeoutException: Futures timed out after [10000 milliseconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:259)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:263)
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:48)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	... 13 more

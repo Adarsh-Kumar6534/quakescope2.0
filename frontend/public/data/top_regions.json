@@ -1,0 +1,2154 @@
+[
+    {
+      "region": "Russia",
+      "event_count": 4090,
+      "pct_of_global": 20.77,
+      "avg_mag": 4.51,
+      "max_mag": 7.8,
+      "avg_depth_km": 32.6
+    },
+    {
+      "region": "Indonesia",
+      "event_count": 1432,
+      "pct_of_global": 7.27,
+      "avg_mag": 4.51,
+      "max_mag": 6.7,
+      "avg_depth_km": 77.0
+    },
+    {
+      "region": "Japan",
+      "event_count": 1076,
+      "pct_of_global": 5.47,
+      "avg_mag": 4.53,
+      "max_mag": 6.8,
+      "avg_depth_km": 47.5
+    },
+    {
+      "region": "Alaska",
+      "event_count": 1071,
+      "pct_of_global": 5.44,
+      "avg_mag": 3.99,
+      "max_mag": 6.2,
+      "avg_depth_km": 37.6
+    },
+    {
+      "region": "Papua New Guinea",
+      "event_count": 866,
+      "pct_of_global": 4.4,
+      "avg_mag": 4.56,
+      "max_mag": 6.9,
+      "avg_depth_km": 50.8
+    },
+    {
+      "region": "Philippines",
+      "event_count": 800,
+      "pct_of_global": 4.06,
+      "avg_mag": 4.56,
+      "max_mag": 7.4,
+      "avg_depth_km": 64.6
+    },
+    {
+      "region": "Chile",
+      "event_count": 570,
+      "pct_of_global": 2.9,
+      "avg_mag": 4.35,
+      "max_mag": 6.4,
+      "avg_depth_km": 77.9
+    },
+    {
+      "region": "Greece",
+      "event_count": 531,
+      "pct_of_global": 2.7,
+      "avg_mag": 4.33,
+      "max_mag": 6.2,
+      "avg_depth_km": 17.1
+    },
+    {
+      "region": "Tonga",
+      "event_count": 467,
+      "pct_of_global": 2.37,
+      "avg_mag": 4.57,
+      "max_mag": 7.0,
+      "avg_depth_km": 162.4
+    },
+    {
+      "region": "Argentina",
+      "event_count": 349,
+      "pct_of_global": 1.77,
+      "avg_mag": 4.5,
+      "max_mag": 6.4,
+      "avg_depth_km": 119.7
+    },
+    {
+      "region": "south of the Fiji Islands",
+      "event_count": 349,
+      "pct_of_global": 1.77,
+      "avg_mag": 4.46,
+      "max_mag": 6.6,
+      "avg_depth_km": 453.4
+    },
+    {
+      "region": "Vanuatu",
+      "event_count": 339,
+      "pct_of_global": 1.72,
+      "avg_mag": 4.58,
+      "max_mag": 5.9,
+      "avg_depth_km": 97.9
+    },
+    {
+      "region": "South Sandwich Islands region",
+      "event_count": 292,
+      "pct_of_global": 1.48,
+      "avg_mag": 4.69,
+      "max_mag": 6.1,
+      "avg_depth_km": 43.5
+    },
+    {
+      "region": "Ethiopia",
+      "event_count": 263,
+      "pct_of_global": 1.34,
+      "avg_mag": 4.47,
+      "max_mag": 5.9,
+      "avg_depth_km": 10.1
+    },
+    {
+      "region": "Peru",
+      "event_count": 242,
+      "pct_of_global": 1.23,
+      "avg_mag": 4.49,
+      "max_mag": 6.2,
+      "avg_depth_km": 91.0
+    },
+    {
+      "region": "Fiji",
+      "event_count": 220,
+      "pct_of_global": 1.12,
+      "avg_mag": 4.35,
+      "max_mag": 5.7,
+      "avg_depth_km": 519.8
+    },
+    {
+      "region": "Timor Leste",
+      "event_count": 213,
+      "pct_of_global": 1.08,
+      "avg_mag": 4.39,
+      "max_mag": 6.2,
+      "avg_depth_km": 196.1
+    },
+    {
+      "region": "China",
+      "event_count": 204,
+      "pct_of_global": 1.04,
+      "avg_mag": 4.46,
+      "max_mag": 5.8,
+      "avg_depth_km": 13.1
+    },
+    {
+      "region": "Dominican Republic",
+      "event_count": 199,
+      "pct_of_global": 1.01,
+      "avg_mag": 3.83,
+      "max_mag": 5.85,
+      "avg_depth_km": 73.2
+    },
+    {
+      "region": "Afghanistan",
+      "event_count": 198,
+      "pct_of_global": 1.01,
+      "avg_mag": 4.38,
+      "max_mag": 6.2,
+      "avg_depth_km": 107.0
+    },
+    {
+      "region": "Northern Mariana Islands",
+      "event_count": 198,
+      "pct_of_global": 1.01,
+      "avg_mag": 4.29,
+      "max_mag": 5.6,
+      "avg_depth_km": 162.5
+    },
+    {
+      "region": "New Zealand",
+      "event_count": 191,
+      "pct_of_global": 0.97,
+      "avg_mag": 4.49,
+      "max_mag": 6.7,
+      "avg_depth_km": 66.8
+    },
+    {
+      "region": "Japan region",
+      "event_count": 190,
+      "pct_of_global": 0.97,
+      "avg_mag": 4.42,
+      "max_mag": 5.6,
+      "avg_depth_km": 154.1
+    },
+    {
+      "region": "Iran",
+      "event_count": 186,
+      "pct_of_global": 0.94,
+      "avg_mag": 4.33,
+      "max_mag": 5.6,
+      "avg_depth_km": 10.7
+    },
+    {
+      "region": "Solomon Islands",
+      "event_count": 185,
+      "pct_of_global": 0.94,
+      "avg_mag": 4.61,
+      "max_mag": 6.3,
+      "avg_depth_km": 56.7
+    },
+    {
+      "region": "Mexico",
+      "event_count": 182,
+      "pct_of_global": 0.92,
+      "avg_mag": 4.48,
+      "max_mag": 6.2,
+      "avg_depth_km": 43.7
+    },
+    {
+      "region": "Fiji region",
+      "event_count": 177,
+      "pct_of_global": 0.9,
+      "avg_mag": 4.36,
+      "max_mag": 5.6,
+      "avg_depth_km": 559.1
+    },
+    {
+      "region": "Guam",
+      "event_count": 160,
+      "pct_of_global": 0.81,
+      "avg_mag": 4.47,
+      "max_mag": 6.0,
+      "avg_depth_km": 70.3
+    },
+    {
+      "region": "Kermadec Islands region",
+      "event_count": 152,
+      "pct_of_global": 0.77,
+      "avg_mag": 4.61,
+      "max_mag": 6.2,
+      "avg_depth_km": 102.8
+    },
+    {
+      "region": "India",
+      "event_count": 146,
+      "pct_of_global": 0.74,
+      "avg_mag": 4.52,
+      "max_mag": 5.5,
+      "avg_depth_km": 31.6
+    },
+    {
+      "region": "Turkey",
+      "event_count": 138,
+      "pct_of_global": 0.7,
+      "avg_mag": 4.4,
+      "max_mag": 6.2,
+      "avg_depth_km": 16.1
+    },
+    {
+      "region": "Burma (Myanmar)",
+      "event_count": 128,
+      "pct_of_global": 0.65,
+      "avg_mag": 4.46,
+      "max_mag": 6.7,
+      "avg_depth_km": 27.6
+    },
+    {
+      "region": "Taiwan",
+      "event_count": 127,
+      "pct_of_global": 0.65,
+      "avg_mag": 4.51,
+      "max_mag": 6.6,
+      "avg_depth_km": 22.9
+    },
+    {
+      "region": "central Mid-Atlantic Ridge",
+      "event_count": 126,
+      "pct_of_global": 0.64,
+      "avg_mag": 4.73,
+      "max_mag": 6.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "U.S. Virgin Islands",
+      "event_count": 113,
+      "pct_of_global": 0.57,
+      "avg_mag": 3.76,
+      "max_mag": 5.63,
+      "avg_depth_km": 41.5
+    },
+    {
+      "region": "Puerto Rico",
+      "event_count": 108,
+      "pct_of_global": 0.55,
+      "avg_mag": 3.72,
+      "max_mag": 4.4,
+      "avg_depth_km": 45.4
+    },
+    {
+      "region": "south of the Kermadec Islands",
+      "event_count": 107,
+      "pct_of_global": 0.54,
+      "avg_mag": 4.54,
+      "max_mag": 5.4,
+      "avg_depth_km": 55.5
+    },
+    {
+      "region": "Guatemala",
+      "event_count": 96,
+      "pct_of_global": 0.49,
+      "avg_mag": 4.45,
+      "max_mag": 5.9,
+      "avg_depth_km": 42.1
+    },
+    {
+      "region": "Mid-Indian Ridge",
+      "event_count": 89,
+      "pct_of_global": 0.45,
+      "avg_mag": 4.66,
+      "max_mag": 5.5,
+      "avg_depth_km": 10.1
+    },
+    {
+      "region": "western Indian-Antarctic Ridge",
+      "event_count": 85,
+      "pct_of_global": 0.43,
+      "avg_mag": 4.54,
+      "max_mag": 6.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Colombia",
+      "event_count": 84,
+      "pct_of_global": 0.43,
+      "avg_mag": 4.48,
+      "max_mag": 6.3,
+      "avg_depth_km": 88.1
+    },
+    {
+      "region": "southern Mid-Atlantic Ridge",
+      "event_count": 83,
+      "pct_of_global": 0.42,
+      "avg_mag": 4.78,
+      "max_mag": 6.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "CA",
+      "event_count": 77,
+      "pct_of_global": 0.39,
+      "avg_mag": 3.92,
+      "max_mag": 5.21,
+      "avg_depth_km": 8.7
+    },
+    {
+      "region": "Tajikistan",
+      "event_count": 73,
+      "pct_of_global": 0.37,
+      "avg_mag": 4.26,
+      "max_mag": 5.8,
+      "avg_depth_km": 76.7
+    },
+    {
+      "region": "El Salvador",
+      "event_count": 72,
+      "pct_of_global": 0.37,
+      "avg_mag": 4.46,
+      "max_mag": 6.2,
+      "avg_depth_km": 61.1
+    },
+    {
+      "region": "Nepal",
+      "event_count": 68,
+      "pct_of_global": 0.35,
+      "avg_mag": 4.4,
+      "max_mag": 5.4,
+      "avg_depth_km": 12.1
+    },
+    {
+      "region": "Drake Passage",
+      "event_count": 61,
+      "pct_of_global": 0.31,
+      "avg_mag": 4.84,
+      "max_mag": 7.6,
+      "avg_depth_km": 9.9
+    },
+    {
+      "region": "Ecuador",
+      "event_count": 61,
+      "pct_of_global": 0.31,
+      "avg_mag": 4.57,
+      "max_mag": 6.3,
+      "avg_depth_km": 64.5
+    },
+    {
+      "region": "Banda Sea",
+      "event_count": 61,
+      "pct_of_global": 0.31,
+      "avg_mag": 4.46,
+      "max_mag": 6.4,
+      "avg_depth_km": 154.7
+    },
+    {
+      "region": "Macquarie Island region",
+      "event_count": 60,
+      "pct_of_global": 0.3,
+      "avg_mag": 4.72,
+      "max_mag": 7.0,
+      "avg_depth_km": 15.3
+    },
+    {
+      "region": "southeast of the Loyalty Islands",
+      "event_count": 58,
+      "pct_of_global": 0.29,
+      "avg_mag": 4.65,
+      "max_mag": 5.6,
+      "avg_depth_km": 18.5
+    },
+    {
+      "region": "northern Mid-Atlantic Ridge",
+      "event_count": 58,
+      "pct_of_global": 0.29,
+      "avg_mag": 4.59,
+      "max_mag": 5.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Nicaragua",
+      "event_count": 56,
+      "pct_of_global": 0.28,
+      "avg_mag": 4.45,
+      "max_mag": 5.2,
+      "avg_depth_km": 52.9
+    },
+    {
+      "region": "Reykjanes Ridge",
+      "event_count": 52,
+      "pct_of_global": 0.26,
+      "avg_mag": 4.58,
+      "max_mag": 6.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Pacific-Antarctic Ridge",
+      "event_count": 51,
+      "pct_of_global": 0.26,
+      "avg_mag": 4.93,
+      "max_mag": 6.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Carlsberg Ridge",
+      "event_count": 51,
+      "pct_of_global": 0.26,
+      "avg_mag": 4.55,
+      "max_mag": 5.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Pakistan",
+      "event_count": 50,
+      "pct_of_global": 0.25,
+      "avg_mag": 4.42,
+      "max_mag": 5.2,
+      "avg_depth_km": 16.9
+    },
+    {
+      "region": "Southern Tibetan Plateau",
+      "event_count": 50,
+      "pct_of_global": 0.25,
+      "avg_mag": 4.47,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Kuril Islands",
+      "event_count": 49,
+      "pct_of_global": 0.25,
+      "avg_mag": 4.42,
+      "max_mag": 6.0,
+      "avg_depth_km": 78.2
+    },
+    {
+      "region": "Wallis and Futuna",
+      "event_count": 48,
+      "pct_of_global": 0.24,
+      "avg_mag": 4.5,
+      "max_mag": 6.6,
+      "avg_depth_km": 303.0
+    },
+    {
+      "region": "Venezuela",
+      "event_count": 42,
+      "pct_of_global": 0.21,
+      "avg_mag": 4.55,
+      "max_mag": 6.3,
+      "avg_depth_km": 46.0
+    },
+    {
+      "region": "Bolivia",
+      "event_count": 42,
+      "pct_of_global": 0.21,
+      "avg_mag": 4.39,
+      "max_mag": 5.3,
+      "avg_depth_km": 207.4
+    },
+    {
+      "region": "Mariana Islands region",
+      "event_count": 40,
+      "pct_of_global": 0.2,
+      "avg_mag": 4.37,
+      "max_mag": 5.2,
+      "avg_depth_km": 121.5
+    },
+    {
+      "region": "Guadeloupe",
+      "event_count": 40,
+      "pct_of_global": 0.2,
+      "avg_mag": 4.61,
+      "max_mag": 6.5,
+      "avg_depth_km": 16.6
+    },
+    {
+      "region": "southern East Pacific Rise",
+      "event_count": 40,
+      "pct_of_global": 0.2,
+      "avg_mag": 4.79,
+      "max_mag": 6.0,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "southeast Indian Ridge",
+      "event_count": 40,
+      "pct_of_global": 0.2,
+      "avg_mag": 4.77,
+      "max_mag": 6.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Costa Rica",
+      "event_count": 37,
+      "pct_of_global": 0.19,
+      "avg_mag": 4.51,
+      "max_mag": 5.9,
+      "avg_depth_km": 30.1
+    },
+    {
+      "region": "Nevada",
+      "event_count": 35,
+      "pct_of_global": 0.18,
+      "avg_mag": 3.71,
+      "max_mag": 4.8,
+      "avg_depth_km": 7.4
+    },
+    {
+      "region": "Micronesia",
+      "event_count": 34,
+      "pct_of_global": 0.17,
+      "avg_mag": 4.64,
+      "max_mag": 5.4,
+      "avg_depth_km": 20.3
+    },
+    {
+      "region": "West Chile Rise",
+      "event_count": 34,
+      "pct_of_global": 0.17,
+      "avg_mag": 4.7,
+      "max_mag": 5.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "west of Macquarie Island",
+      "event_count": 30,
+      "pct_of_global": 0.15,
+      "avg_mag": 4.81,
+      "max_mag": 6.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Southwest Indian Ridge",
+      "event_count": 29,
+      "pct_of_global": 0.15,
+      "avg_mag": 4.59,
+      "max_mag": 5.0,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Oregon",
+      "event_count": 29,
+      "pct_of_global": 0.15,
+      "avg_mag": 4.29,
+      "max_mag": 5.9,
+      "avg_depth_km": 9.9
+    },
+    {
+      "region": "Panama",
+      "event_count": 26,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.69,
+      "max_mag": 6.2,
+      "avg_depth_km": 14.5
+    },
+    {
+      "region": "Iceland",
+      "event_count": 26,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.65,
+      "max_mag": 5.4,
+      "avg_depth_km": 9.8
+    },
+    {
+      "region": "India region",
+      "event_count": 26,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.48,
+      "max_mag": 6.0,
+      "avg_depth_km": 10.5
+    },
+    {
+      "region": "Svalbard and Jan Mayen",
+      "event_count": 26,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.47,
+      "max_mag": 6.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Easter Island region",
+      "event_count": 25,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.74,
+      "max_mag": 5.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Saudi Arabia",
+      "event_count": 25,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.32,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Chagos Archipelago region",
+      "event_count": 25,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.61,
+      "max_mag": 5.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Kyrgyzstan",
+      "event_count": 25,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.36,
+      "max_mag": 5.1,
+      "avg_depth_km": 11.2
+    },
+    {
+      "region": "north of Ascension Island",
+      "event_count": 25,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.7,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Scotia Sea",
+      "event_count": 25,
+      "pct_of_global": 0.13,
+      "avg_mag": 4.73,
+      "max_mag": 6.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "south of Tonga",
+      "event_count": 24,
+      "pct_of_global": 0.12,
+      "avg_mag": 4.77,
+      "max_mag": 5.6,
+      "avg_depth_km": 19.3
+    },
+    {
+      "region": "Hawaii",
+      "event_count": 24,
+      "pct_of_global": 0.12,
+      "avg_mag": 3.84,
+      "max_mag": 4.5,
+      "avg_depth_km": 27.2
+    },
+    {
+      "region": "south of Africa",
+      "event_count": 24,
+      "pct_of_global": 0.12,
+      "avg_mag": 4.51,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "New Caledonia",
+      "event_count": 24,
+      "pct_of_global": 0.12,
+      "avg_mag": 4.6,
+      "max_mag": 5.1,
+      "avg_depth_km": 12.1
+    },
+    {
+      "region": "southeast of Easter Island",
+      "event_count": 24,
+      "pct_of_global": 0.12,
+      "avg_mag": 4.85,
+      "max_mag": 5.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Balleny Islands region",
+      "event_count": 24,
+      "pct_of_global": 0.12,
+      "avg_mag": 4.95,
+      "max_mag": 5.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "western Xizang",
+      "event_count": 22,
+      "pct_of_global": 0.11,
+      "avg_mag": 4.46,
+      "max_mag": 5.1,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Canada",
+      "event_count": 22,
+      "pct_of_global": 0.11,
+      "avg_mag": 4.23,
+      "max_mag": 5.2,
+      "avg_depth_km": 11.6
+    },
+    {
+      "region": "Honduras",
+      "event_count": 22,
+      "pct_of_global": 0.11,
+      "avg_mag": 4.48,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "central East Pacific Rise",
+      "event_count": 21,
+      "pct_of_global": 0.11,
+      "avg_mag": 4.73,
+      "max_mag": 5.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Greenland",
+      "event_count": 20,
+      "pct_of_global": 0.1,
+      "avg_mag": 4.38,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Italy",
+      "event_count": 20,
+      "pct_of_global": 0.1,
+      "avg_mag": 4.35,
+      "max_mag": 5.2,
+      "avg_depth_km": 69.5
+    },
+    {
+      "region": "South Indian Ocean",
+      "event_count": 20,
+      "pct_of_global": 0.1,
+      "avg_mag": 4.63,
+      "max_mag": 5.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Yemen",
+      "event_count": 20,
+      "pct_of_global": 0.1,
+      "avg_mag": 4.49,
+      "max_mag": 5.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Portugal",
+      "event_count": 20,
+      "pct_of_global": 0.1,
+      "avg_mag": 4.51,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.1
+    },
+    {
+      "region": "Tanzania",
+      "event_count": 19,
+      "pct_of_global": 0.1,
+      "avg_mag": 4.47,
+      "max_mag": 5.0,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "New Mexico",
+      "event_count": 19,
+      "pct_of_global": 0.1,
+      "avg_mag": 3.79,
+      "max_mag": 5.4,
+      "avg_depth_km": 7.1
+    },
+    {
+      "region": "Texas",
+      "event_count": 18,
+      "pct_of_global": 0.09,
+      "avg_mag": 3.87,
+      "max_mag": 5.0,
+      "avg_depth_km": 6.2
+    },
+    {
+      "region": "Revilla Gigedo Islands region",
+      "event_count": 18,
+      "pct_of_global": 0.09,
+      "avg_mag": 4.64,
+      "max_mag": 5.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Idaho",
+      "event_count": 17,
+      "pct_of_global": 0.09,
+      "avg_mag": 3.81,
+      "max_mag": 4.3,
+      "avg_depth_km": 11.4
+    },
+    {
+      "region": "Australia",
+      "event_count": 16,
+      "pct_of_global": 0.08,
+      "avg_mag": 4.39,
+      "max_mag": 5.1,
+      "avg_depth_km": 9.9
+    },
+    {
+      "region": "north of Severnaya Zemlya",
+      "event_count": 16,
+      "pct_of_global": 0.08,
+      "avg_mag": 4.59,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Somalia",
+      "event_count": 15,
+      "pct_of_global": 0.08,
+      "avg_mag": 4.38,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "east of the Kuril Islands",
+      "event_count": 15,
+      "pct_of_global": 0.08,
+      "avg_mag": 4.61,
+      "max_mag": 6.1,
+      "avg_depth_km": 9.9
+    },
+    {
+      "region": "Kazakhstan",
+      "event_count": 14,
+      "pct_of_global": 0.07,
+      "avg_mag": 4.37,
+      "max_mag": 5.2,
+      "avg_depth_km": 11.3
+    },
+    {
+      "region": "Cyprus",
+      "event_count": 14,
+      "pct_of_global": 0.07,
+      "avg_mag": 4.49,
+      "max_mag": 5.3,
+      "avg_depth_km": 13.5
+    },
+    {
+      "region": "east of the South Sandwich Islands",
+      "event_count": 14,
+      "pct_of_global": 0.07,
+      "avg_mag": 4.9,
+      "max_mag": 5.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "southwest of Africa",
+      "event_count": 13,
+      "pct_of_global": 0.07,
+      "avg_mag": 4.72,
+      "max_mag": 6.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Cayman Islands",
+      "event_count": 13,
+      "pct_of_global": 0.07,
+      "avg_mag": 4.68,
+      "max_mag": 7.6,
+      "avg_depth_km": 10.3
+    },
+    {
+      "region": "Greenland Sea",
+      "event_count": 13,
+      "pct_of_global": 0.07,
+      "avg_mag": 4.44,
+      "max_mag": 5.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "northern East Pacific Rise",
+      "event_count": 12,
+      "pct_of_global": 0.06,
+      "avg_mag": 4.84,
+      "max_mag": 5.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "west of the Galapagos Islands",
+      "event_count": 11,
+      "pct_of_global": 0.06,
+      "avg_mag": 4.59,
+      "max_mag": 5.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "MX",
+      "event_count": 11,
+      "pct_of_global": 0.06,
+      "avg_mag": 3.73,
+      "max_mag": 4.37,
+      "avg_depth_km": 11.0
+    },
+    {
+      "region": "Vanuatu region",
+      "event_count": 11,
+      "pct_of_global": 0.06,
+      "avg_mag": 4.6,
+      "max_mag": 6.4,
+      "avg_depth_km": 436.4
+    },
+    {
+      "region": "Poland",
+      "event_count": 11,
+      "pct_of_global": 0.06,
+      "avg_mag": 4.29,
+      "max_mag": 4.7,
+      "avg_depth_km": 5.1
+    },
+    {
+      "region": "off the coast of Oregon",
+      "event_count": 11,
+      "pct_of_global": 0.06,
+      "avg_mag": 4.22,
+      "max_mag": 5.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Mauritius",
+      "event_count": 10,
+      "pct_of_global": 0.05,
+      "avg_mag": 4.47,
+      "max_mag": 4.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "north of Svalbard",
+      "event_count": 10,
+      "pct_of_global": 0.05,
+      "avg_mag": 4.29,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Owen Fracture Zone region",
+      "event_count": 10,
+      "pct_of_global": 0.05,
+      "avg_mag": 4.43,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "northwest of the Kuril Islands",
+      "event_count": 9,
+      "pct_of_global": 0.05,
+      "avg_mag": 4.52,
+      "max_mag": 5.9,
+      "avg_depth_km": 372.7
+    },
+    {
+      "region": "Brazil",
+      "event_count": 9,
+      "pct_of_global": 0.05,
+      "avg_mag": 4.42,
+      "max_mag": 5.0,
+      "avg_depth_km": 97.0
+    },
+    {
+      "region": "Mongolia",
+      "event_count": 9,
+      "pct_of_global": 0.05,
+      "avg_mag": 4.44,
+      "max_mag": 5.4,
+      "avg_depth_km": 9.9
+    },
+    {
+      "region": "Indian Ocean Triple Junction",
+      "event_count": 9,
+      "pct_of_global": 0.05,
+      "avg_mag": 4.49,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Vietnam",
+      "event_count": 8,
+      "pct_of_global": 0.04,
+      "avg_mag": 4.27,
+      "max_mag": 4.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Uzbekistan",
+      "event_count": 8,
+      "pct_of_global": 0.04,
+      "avg_mag": 4.38,
+      "max_mag": 4.6,
+      "avg_depth_km": 12.7
+    },
+    {
+      "region": "Anguilla",
+      "event_count": 8,
+      "pct_of_global": 0.04,
+      "avg_mag": 4.04,
+      "max_mag": 4.4,
+      "avg_depth_km": 50.0
+    },
+    {
+      "region": "east of the North Island of New Zealand",
+      "event_count": 7,
+      "pct_of_global": 0.04,
+      "avg_mag": 4.39,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Mauritius - Reunion region",
+      "event_count": 7,
+      "pct_of_global": 0.04,
+      "avg_mag": 4.63,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Norwegian Sea",
+      "event_count": 7,
+      "pct_of_global": 0.04,
+      "avg_mag": 4.54,
+      "max_mag": 5.0,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "off the coast of Central America",
+      "event_count": 7,
+      "pct_of_global": 0.04,
+      "avg_mag": 4.49,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Wyoming",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 3.78,
+      "max_mag": 3.9,
+      "avg_depth_km": 8.7
+    },
+    {
+      "region": "New Zealand region",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.58,
+      "max_mag": 5.2,
+      "avg_depth_km": 15.5
+    },
+    {
+      "region": "Romania",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.25,
+      "max_mag": 4.4,
+      "avg_depth_km": 107.8
+    },
+    {
+      "region": "Ascension Island region",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.67,
+      "max_mag": 5.0,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Tunisia",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.53,
+      "max_mag": 5.1,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "South Atlantic Ocean",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.88,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Saint Helena",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.72,
+      "max_mag": 5.1,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Oman",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.43,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Sudan",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.32,
+      "max_mag": 4.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Bangladesh",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.37,
+      "max_mag": 5.4,
+      "avg_depth_km": 12.8
+    },
+    {
+      "region": "Azores Islands region",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.53,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "North Atlantic Ocean",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.63,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "south of Panama",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.58,
+      "max_mag": 5.1,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "off the coast of Ecuador",
+      "event_count": 6,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.72,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Iceland region",
+      "event_count": 5,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.32,
+      "max_mag": 4.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Washington",
+      "event_count": 5,
+      "pct_of_global": 0.03,
+      "avg_mag": 3.86,
+      "max_mag": 4.5,
+      "avg_depth_km": 24.5
+    },
+    {
+      "region": "Galapagos Triple Junction region",
+      "event_count": 5,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.44,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Malta",
+      "event_count": 5,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.54,
+      "max_mag": 5.1,
+      "avg_depth_km": 10.5
+    },
+    {
+      "region": "Bouvet Island region",
+      "event_count": 5,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.6,
+      "max_mag": 5.0,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Turkmenistan",
+      "event_count": 5,
+      "pct_of_global": 0.03,
+      "avg_mag": 4.46,
+      "max_mag": 5.1,
+      "avg_depth_km": 26.6
+    },
+    {
+      "region": "Malawi",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.48,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Xizang-Qinghai border region",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.4,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Spain",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.48,
+      "max_mag": 5.2,
+      "avg_depth_km": 22.1
+    },
+    {
+      "region": "Ecuador region",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.28,
+      "max_mag": 4.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Antigua and Barbuda",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.32,
+      "max_mag": 4.4,
+      "avg_depth_km": 35.6
+    },
+    {
+      "region": "Davis Strait",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.45,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Morocco",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.38,
+      "max_mag": 5.1,
+      "avg_depth_km": 14.6
+    },
+    {
+      "region": "Qatar",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.07,
+      "max_mag": 4.1,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Democratic Republic of the Congo",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.45,
+      "max_mag": 4.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Samoa",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.5,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Martinique",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.53,
+      "max_mag": 4.9,
+      "avg_depth_km": 95.7
+    },
+    {
+      "region": "Prince Edward Islands region",
+      "event_count": 4,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.73,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Albania",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.3,
+      "max_mag": 4.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "South Africa",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.63,
+      "max_mag": 4.8,
+      "avg_depth_km": 5.0
+    },
+    {
+      "region": "Socotra region",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.4,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Croatia",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.47,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Burma",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.5,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Azerbaijan",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.23,
+      "max_mag": 4.4,
+      "avg_depth_km": 36.8
+    },
+    {
+      "region": "Falkland Islands region",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.67,
+      "max_mag": 5.0,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Montenegro",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.13,
+      "max_mag": 4.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "South Shetland Islands",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.67,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Barbados",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.53,
+      "max_mag": 4.9,
+      "avg_depth_km": 33.4
+    },
+    {
+      "region": "near the north coast of Greenland",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.7,
+      "max_mag": 5.8,
+      "avg_depth_km": 9.3
+    },
+    {
+      "region": "Eritrea",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 5.07,
+      "max_mag": 5.5,
+      "avg_depth_km": 5.3
+    },
+    {
+      "region": "Kansas",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 3.57,
+      "max_mag": 3.7,
+      "avg_depth_km": 9.0
+    },
+    {
+      "region": "Tibetan Plateau",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.83,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.3
+    },
+    {
+      "region": "Libya",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.27,
+      "max_mag": 4.5,
+      "avg_depth_km": 9.9
+    },
+    {
+      "region": "D'Entrecasteaux Islands region",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.07,
+      "max_mag": 4.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Russia region",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.33,
+      "max_mag": 4.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Madagascar",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.5,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "off the west coast of northern Sumatra",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 4.57,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Bosnia and Herzegovina",
+      "event_count": 3,
+      "pct_of_global": 0.02,
+      "avg_mag": 3.93,
+      "max_mag": 4.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Oklahoma",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.65,
+      "max_mag": 3.71,
+      "avg_depth_km": 6.3
+    },
+    {
+      "region": "northwest of Australia",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.6,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Utah",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.04,
+      "max_mag": 4.13,
+      "avg_depth_km": 41.1
+    },
+    {
+      "region": "Celebes Sea",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.3,
+      "max_mag": 4.3,
+      "avg_depth_km": 541.5
+    },
+    {
+      "region": "Laos",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.35,
+      "max_mag": 4.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "North Pacific Ocean",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.4,
+      "max_mag": 4.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Russia Earthquake",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 8.1,
+      "max_mag": 8.8,
+      "avg_depth_km": 34.5
+    },
+    {
+      "region": "Malaysia",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.15,
+      "max_mag": 4.3,
+      "avg_depth_km": 322.3
+    },
+    {
+      "region": "Azores-Cape St. Vincent Ridge",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 5.15,
+      "max_mag": 5.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "California",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.7,
+      "max_mag": 3.8,
+      "avg_depth_km": 6.7
+    },
+    {
+      "region": "Ukraine",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.3,
+      "max_mag": 4.5,
+      "avg_depth_km": 9.7
+    },
+    {
+      "region": "east central Pacific Ocean",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.25,
+      "max_mag": 4.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Armenia",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.4,
+      "max_mag": 4.4,
+      "avg_depth_km": 11.8
+    },
+    {
+      "region": "Burundi",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.85,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "American Samoa",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.5,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "South Georgia Island region",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.95,
+      "max_mag": 5.0,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Dominica",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.3,
+      "max_mag": 4.4,
+      "avg_depth_km": 84.8
+    },
+    {
+      "region": "Zimbabwe",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.4,
+      "max_mag": 4.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Grenada",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.3,
+      "max_mag": 4.3,
+      "avg_depth_km": 72.9
+    },
+    {
+      "region": "Federated States of Micronesia",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 5.4,
+      "max_mag": 5.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Hungary",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.05,
+      "max_mag": 4.1,
+      "avg_depth_km": 10.6
+    },
+    {
+      "region": "Palau",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.6,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "eastern Greenland",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.45,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Chad",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.4,
+      "max_mag": 4.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Rwanda",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.35,
+      "max_mag": 4.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Tristan da Cunha region",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 5.2,
+      "max_mag": 5.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Uganda",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.6,
+      "max_mag": 4.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Algeria",
+      "event_count": 2,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.65,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Norway",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.5,
+      "max_mag": 4.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "northwest of New Zealand",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.9,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Western Caribbean Sea",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 5.4,
+      "max_mag": 5.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Sea of Okhotsk",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.1,
+      "max_mag": 4.1,
+      "avg_depth_km": 520.0
+    },
+    {
+      "region": "south of Timor",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.8,
+      "max_mag": 4.8,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Bermuda",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.0,
+      "max_mag": 4.0,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "southeast of the Galapagos Islands",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.5,
+      "max_mag": 4.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Netherlands",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.8,
+      "max_mag": 3.8,
+      "avg_depth_km": 5.0
+    },
+    {
+      "region": "Tennessee",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.1,
+      "max_mag": 4.1,
+      "avg_depth_km": 25.4
+    },
+    {
+      "region": "South Dakota",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.6,
+      "max_mag": 3.6,
+      "avg_depth_km": 5.0
+    },
+    {
+      "region": "Japan Earthquake",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 7.6,
+      "max_mag": 7.6,
+      "avg_depth_km": 40.7
+    },
+    {
+      "region": "Palau region",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.4,
+      "max_mag": 4.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Taiwan Earthquake",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 6.0,
+      "max_mag": 6.0,
+      "avg_depth_km": 8.0
+    },
+    {
+      "region": "2025 Southern Tibetan Plateau Earthquake",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 7.1,
+      "max_mag": 7.1,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "south of Australia",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.7,
+      "max_mag": 4.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "South Georgia Rise",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.6,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Syria",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.4,
+      "max_mag": 4.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "east of Severnaya Zemlya",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.9,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "south of Alaska",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.9,
+      "max_mag": 3.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "United Arab Emirates",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.3,
+      "max_mag": 4.3,
+      "avg_depth_km": 11.5
+    },
+    {
+      "region": "Trinidad and Tobago",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.4,
+      "max_mag": 4.4,
+      "avg_depth_km": 76.9
+    },
+    {
+      "region": "Saint Vincent and the Grenadines",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.8,
+      "max_mag": 4.8,
+      "avg_depth_km": 139.2
+    },
+    {
+      "region": "Iraq",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.3,
+      "max_mag": 4.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "south of the Mariana Islands",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 5.1,
+      "max_mag": 5.1,
+      "avg_depth_km": 35.0
+    },
+    {
+      "region": "southern Pacific Ocean",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.6,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Arizona",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.6,
+      "max_mag": 3.6,
+      "avg_depth_km": 5.0
+    },
+    {
+      "region": "Bhutan",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.3,
+      "max_mag": 4.3,
+      "avg_depth_km": 41.1
+    },
+    {
+      "region": "Georgia",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.1,
+      "max_mag": 4.1,
+      "avg_depth_km": 9.1
+    },
+    {
+      "region": "United Kingdom",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.9,
+      "max_mag": 3.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Saint Kitts and Nevis",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.1,
+      "max_mag": 4.1,
+      "avg_depth_km": 91.2
+    },
+    {
+      "region": "southeast central Pacific Ocean",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 5.2,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "north of Franz Josef Land",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 5.2,
+      "max_mag": 5.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "south of the Aleutian Islands",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.6,
+      "max_mag": 3.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Haiti",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.9,
+      "max_mag": 3.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "southwest of Australia",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.7,
+      "max_mag": 4.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Alaska Earthquake",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 7.3,
+      "max_mag": 7.3,
+      "avg_depth_km": 38.0
+    },
+    {
+      "region": "Arctic Ocean",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.7,
+      "max_mag": 4.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Beaufort Sea",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 5.3,
+      "max_mag": 5.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Federated States of Micronesia region",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.6,
+      "max_mag": 4.6,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "North Korea",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.1,
+      "max_mag": 4.1,
+      "avg_depth_km": 557.8
+    },
+    {
+      "region": "2025 Drake Passage Earthquake",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 7.4,
+      "max_mag": 7.4,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "east of the Philippine Islands",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 6.2,
+      "max_mag": 6.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Gabon",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.3,
+      "max_mag": 4.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Saint Eustatius and Saba",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.4,
+      "max_mag": 4.4,
+      "avg_depth_km": 126.3
+    },
+    {
+      "region": "Maine",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.8,
+      "max_mag": 3.8,
+      "avg_depth_km": 10.6
+    },
+    {
+      "region": "Thailand",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.2,
+      "max_mag": 4.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "2025 Southern Drake Passage Earthquake",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 7.5,
+      "max_mag": 7.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Louisiana",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 3.5,
+      "max_mag": 3.5,
+      "avg_depth_km": 5.0
+    },
+    {
+      "region": "Kuwait",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.3,
+      "max_mag": 4.3,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Djibouti",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.5,
+      "max_mag": 4.5,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Burma (Myanmar) Earthquake",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 7.7,
+      "max_mag": 7.7,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "west of Vancouver Island",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.2,
+      "max_mag": 4.2,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Svalbard region",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.9,
+      "max_mag": 4.9,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "2025 Hubbard Glacier Earthquake",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 7.0,
+      "max_mag": 7.0,
+      "avg_depth_km": 10.3
+    },
+    {
+      "region": "Bahamas",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.1,
+      "max_mag": 4.1,
+      "avg_depth_km": 10.0
+    },
+    {
+      "region": "Switzerland",
+      "event_count": 1,
+      "pct_of_global": 0.01,
+      "avg_mag": 4.1,
+      "max_mag": 4.1,
+      "avg_depth_km": 10.0
+    }
+]

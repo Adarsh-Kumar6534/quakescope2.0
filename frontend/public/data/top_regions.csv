@@ -1,0 +1,270 @@
+region,event_count,pct_of_global,avg_mag,max_mag,avg_depth_km
+Russia,4090,20.77,4.51,7.8,32.6
+Indonesia,1432,7.27,4.51,6.7,77.0
+Japan,1076,5.47,4.53,6.8,47.5
+Alaska,1071,5.44,3.99,6.2,37.6
+Papua New Guinea,866,4.4,4.56,6.9,50.8
+Philippines,800,4.06,4.56,7.4,64.6
+Chile,570,2.9,4.35,6.4,77.9
+Greece,531,2.7,4.33,6.2,17.1
+Tonga,467,2.37,4.57,7.0,162.4
+Argentina,349,1.77,4.5,6.4,119.7
+south of the Fiji Islands,349,1.77,4.46,6.6,453.4
+Vanuatu,339,1.72,4.58,5.9,97.9
+South Sandwich Islands region,292,1.48,4.69,6.1,43.5
+Ethiopia,263,1.34,4.47,5.9,10.1
+Peru,242,1.23,4.49,6.2,91.0
+Fiji,220,1.12,4.35,5.7,519.8
+Timor Leste,213,1.08,4.39,6.2,196.1
+China,204,1.04,4.46,5.8,13.1
+Dominican Republic,199,1.01,3.83,5.85,73.2
+Afghanistan,198,1.01,4.38,6.2,107.0
+Northern Mariana Islands,198,1.01,4.29,5.6,162.5
+New Zealand,191,0.97,4.49,6.7,66.8
+Japan region,190,0.97,4.42,5.6,154.1
+Iran,186,0.94,4.33,5.6,10.7
+Solomon Islands,185,0.94,4.61,6.3,56.7
+Mexico,182,0.92,4.48,6.2,43.7
+Fiji region,177,0.9,4.36,5.6,559.1
+Guam,160,0.81,4.47,6.0,70.3
+Kermadec Islands region,152,0.77,4.61,6.2,102.8
+India,146,0.74,4.52,5.5,31.6
+Turkey,138,0.7,4.4,6.2,16.1
+Burma (Myanmar),128,0.65,4.46,6.7,27.6
+Taiwan,127,0.65,4.51,6.6,22.9
+central Mid-Atlantic Ridge,126,0.64,4.73,6.6,10.0
+U.S. Virgin Islands,113,0.57,3.76,5.63,41.5
+Puerto Rico,108,0.55,3.72,4.4,45.4
+south of the Kermadec Islands,107,0.54,4.54,5.4,55.5
+Guatemala,96,0.49,4.45,5.9,42.1
+Mid-Indian Ridge,89,0.45,4.66,5.5,10.1
+western Indian-Antarctic Ridge,85,0.43,4.54,6.2,10.0
+Colombia,84,0.43,4.48,6.3,88.1
+southern Mid-Atlantic Ridge,83,0.42,4.78,6.2,10.0
+CA,77,0.39,3.92,5.21,8.7
+Tajikistan,73,0.37,4.26,5.8,76.7
+El Salvador,72,0.37,4.46,6.2,61.1
+Nepal,68,0.35,4.4,5.4,12.1
+Drake Passage,61,0.31,4.84,7.6,9.9
+Ecuador,61,0.31,4.57,6.3,64.5
+Banda Sea,61,0.31,4.46,6.4,154.7
+Macquarie Island region,60,0.3,4.72,7.0,15.3
+southeast of the Loyalty Islands,58,0.29,4.65,5.6,18.5
+northern Mid-Atlantic Ridge,58,0.29,4.59,5.6,10.0
+Nicaragua,56,0.28,4.45,5.2,52.9
+Reykjanes Ridge,52,0.26,4.58,6.9,10.0
+Pacific-Antarctic Ridge,51,0.26,4.93,6.3,10.0
+Carlsberg Ridge,51,0.26,4.55,5.3,10.0
+Pakistan,50,0.25,4.42,5.2,16.9
+Southern Tibetan Plateau,50,0.25,4.47,5.2,10.0
+Kuril Islands,49,0.25,4.42,6.0,78.2
+Wallis and Futuna,48,0.24,4.5,6.6,303.0
+Venezuela,42,0.21,4.55,6.3,46.0
+Bolivia,42,0.21,4.39,5.3,207.4
+Mariana Islands region,40,0.2,4.37,5.2,121.5
+Guadeloupe,40,0.2,4.61,6.5,16.6
+southern East Pacific Rise,40,0.2,4.79,6.0,10.0
+southeast Indian Ridge,40,0.2,4.77,6.6,10.0
+Costa Rica,37,0.19,4.51,5.9,30.1
+Nevada,35,0.18,3.71,4.8,7.4
+Micronesia,34,0.17,4.64,5.4,20.3
+West Chile Rise,34,0.17,4.7,5.7,10.0
+west of Macquarie Island,30,0.15,4.81,6.2,10.0
+Southwest Indian Ridge,29,0.15,4.59,5.0,10.0
+Oregon,29,0.15,4.29,5.9,9.9
+Panama,26,0.13,4.69,6.2,14.5
+Iceland,26,0.13,4.65,5.4,9.8
+India region,26,0.13,4.48,6.0,10.5
+Svalbard and Jan Mayen,26,0.13,4.47,6.5,10.0
+Easter Island region,25,0.13,4.74,5.4,10.0
+Saudi Arabia,25,0.13,4.32,5.2,10.0
+Chagos Archipelago region,25,0.13,4.61,5.5,10.0
+Kyrgyzstan,25,0.13,4.36,5.1,11.2
+north of Ascension Island,25,0.13,4.7,5.2,10.0
+Scotia Sea,25,0.13,4.73,6.6,10.0
+south of Tonga,24,0.12,4.77,5.6,19.3
+Hawaii,24,0.12,3.84,4.5,27.2
+south of Africa,24,0.12,4.51,5.2,10.0
+New Caledonia,24,0.12,4.6,5.1,12.1
+southeast of Easter Island,24,0.12,4.85,5.6,10.0
+Balleny Islands region,24,0.12,4.95,5.6,10.0
+western Xizang,22,0.11,4.46,5.1,10.0
+Canada,22,0.11,4.23,5.2,11.6
+Honduras,22,0.11,4.48,4.9,10.0
+central East Pacific Rise,21,0.11,4.73,5.7,10.0
+Greenland,20,0.1,4.38,4.8,10.0
+Italy,20,0.1,4.35,5.2,69.5
+South Indian Ocean,20,0.1,4.63,5.7,10.0
+Yemen,20,0.1,4.49,5.3,10.0
+Portugal,20,0.1,4.51,5.2,10.1
+Tanzania,19,0.1,4.47,5.0,10.0
+New Mexico,19,0.1,3.79,5.4,7.1
+Texas,18,0.09,3.87,5.0,6.2
+Revilla Gigedo Islands region,18,0.09,4.64,5.8,10.0
+Idaho,17,0.09,3.81,4.3,11.4
+Australia,16,0.08,4.39,5.1,9.9
+north of Severnaya Zemlya,16,0.08,4.59,5.2,10.0
+Somalia,15,0.08,4.38,5.2,10.0
+east of the Kuril Islands,15,0.08,4.61,6.1,9.9
+Kazakhstan,14,0.07,4.37,5.2,11.3
+Cyprus,14,0.07,4.49,5.3,13.5
+east of the South Sandwich Islands,14,0.07,4.9,5.6,10.0
+southwest of Africa,13,0.07,4.72,6.2,10.0
+Cayman Islands,13,0.07,4.68,7.6,10.3
+Greenland Sea,13,0.07,4.44,5.7,10.0
+northern East Pacific Rise,12,0.06,4.84,5.6,10.0
+west of the Galapagos Islands,11,0.06,4.59,5.3,10.0
+MX,11,0.06,3.73,4.37,11.0
+Vanuatu region,11,0.06,4.6,6.4,436.4
+Poland,11,0.06,4.29,4.7,5.1
+off the coast of Oregon,11,0.06,4.22,5.4,10.0
+Mauritius,10,0.05,4.47,4.7,10.0
+north of Svalbard,10,0.05,4.29,4.6,10.0
+Owen Fracture Zone region,10,0.05,4.43,5.2,10.0
+northwest of the Kuril Islands,9,0.05,4.52,5.9,372.7
+Brazil,9,0.05,4.42,5.0,97.0
+Mongolia,9,0.05,4.44,5.4,9.9
+Indian Ocean Triple Junction,9,0.05,4.49,4.6,10.0
+Vietnam,8,0.04,4.27,4.7,10.0
+Uzbekistan,8,0.04,4.38,4.6,12.7
+Anguilla,8,0.04,4.04,4.4,50.0
+east of the North Island of New Zealand,7,0.04,4.39,4.8,10.0
+Mauritius - Reunion region,7,0.04,4.63,4.9,10.0
+Norwegian Sea,7,0.04,4.54,5.0,10.0
+off the coast of Central America,7,0.04,4.49,4.8,10.0
+Wyoming,6,0.03,3.78,3.9,8.7
+New Zealand region,6,0.03,4.58,5.2,15.5
+Romania,6,0.03,4.25,4.4,107.8
+Ascension Island region,6,0.03,4.67,5.0,10.0
+Tunisia,6,0.03,4.53,5.1,10.0
+South Atlantic Ocean,6,0.03,4.88,5.2,10.0
+Saint Helena,6,0.03,4.72,5.1,10.0
+Oman,6,0.03,4.43,4.8,10.0
+Sudan,6,0.03,4.32,4.5,10.0
+Bangladesh,6,0.03,4.37,5.4,12.8
+Azores Islands region,6,0.03,4.53,4.8,10.0
+North Atlantic Ocean,6,0.03,4.63,4.9,10.0
+south of Panama,6,0.03,4.58,5.1,10.0
+off the coast of Ecuador,6,0.03,4.72,5.2,10.0
+Iceland region,5,0.03,4.32,4.5,10.0
+Washington,5,0.03,3.86,4.5,24.5
+Galapagos Triple Junction region,5,0.03,4.44,4.8,10.0
+Malta,5,0.03,4.54,5.1,10.5
+Bouvet Island region,5,0.03,4.6,5.0,10.0
+Turkmenistan,5,0.03,4.46,5.1,26.6
+Malawi,4,0.02,4.48,4.6,10.0
+Xizang-Qinghai border region,4,0.02,4.4,4.6,10.0
+Spain,4,0.02,4.48,5.2,22.1
+Ecuador region,4,0.02,4.28,4.5,10.0
+Antigua and Barbuda,4,0.02,4.32,4.4,35.6
+Davis Strait,4,0.02,4.45,4.8,10.0
+Morocco,4,0.02,4.38,5.1,14.6
+Qatar,4,0.02,4.07,4.1,10.0
+Democratic Republic of the Congo,4,0.02,4.45,4.7,10.0
+Samoa,4,0.02,4.5,4.9,10.0
+Martinique,4,0.02,4.53,4.9,95.7
+Prince Edward Islands region,4,0.02,4.73,4.9,10.0
+Albania,3,0.02,4.3,4.4,10.0
+South Africa,3,0.02,4.63,4.8,5.0
+Socotra region,3,0.02,4.4,4.6,10.0
+Croatia,3,0.02,4.47,4.6,10.0
+Burma,3,0.02,4.5,4.6,10.0
+Azerbaijan,3,0.02,4.23,4.4,36.8
+Falkland Islands region,3,0.02,4.67,5.0,10.0
+Montenegro,3,0.02,4.13,4.3,10.0
+South Shetland Islands,3,0.02,4.67,4.8,10.0
+Barbados,3,0.02,4.53,4.9,33.4
+near the north coast of Greenland,3,0.02,4.7,5.8,9.3
+Eritrea,3,0.02,5.07,5.5,5.3
+Kansas,3,0.02,3.57,3.7,9.0
+Tibetan Plateau,3,0.02,4.83,5.2,10.3
+Libya,3,0.02,4.27,4.5,9.9
+D'Entrecasteaux Islands region,3,0.02,4.07,4.2,10.0
+Russia region,3,0.02,4.33,4.5,10.0
+Madagascar,3,0.02,4.5,4.6,10.0
+off the west coast of northern Sumatra,3,0.02,4.57,4.8,10.0
+Bosnia and Herzegovina,3,0.02,3.93,4.4,10.0
+Oklahoma,2,0.01,3.65,3.71,6.3
+northwest of Australia,2,0.01,4.6,4.9,10.0
+Utah,2,0.01,4.04,4.13,41.1
+Celebes Sea,2,0.01,4.3,4.3,541.5
+Laos,2,0.01,4.35,4.4,10.0
+North Pacific Ocean,2,0.01,4.4,4.5,10.0
+Russia Earthquake,2,0.01,8.1,8.8,34.5
+Malaysia,2,0.01,4.15,4.3,322.3
+Azores-Cape St. Vincent Ridge,2,0.01,5.15,5.5,10.0
+California,2,0.01,3.7,3.8,6.7
+Ukraine,2,0.01,4.3,4.5,9.7
+east central Pacific Ocean,2,0.01,4.25,4.3,10.0
+Armenia,2,0.01,4.4,4.4,11.8
+Burundi,2,0.01,4.85,5.2,10.0
+American Samoa,2,0.01,4.5,4.6,10.0
+South Georgia Island region,2,0.01,4.95,5.0,10.0
+Dominica,2,0.01,4.3,4.4,84.8
+Zimbabwe,2,0.01,4.4,4.5,10.0
+Grenada,2,0.01,4.3,4.3,72.9
+Federated States of Micronesia,2,0.01,5.4,5.9,10.0
+Hungary,2,0.01,4.05,4.1,10.6
+Palau,2,0.01,4.6,4.6,10.0
+eastern Greenland,2,0.01,4.45,4.9,10.0
+Chad,2,0.01,4.4,4.4,10.0
+Rwanda,2,0.01,4.35,4.4,10.0
+Tristan da Cunha region,2,0.01,5.2,5.6,10.0
+Uganda,2,0.01,4.6,4.7,10.0
+Algeria,2,0.01,4.65,4.8,10.0
+Norway,1,0.01,4.5,4.5,10.0
+northwest of New Zealand,1,0.01,4.9,4.9,10.0
+Western Caribbean Sea,1,0.01,5.4,5.4,10.0
+Sea of Okhotsk,1,0.01,4.1,4.1,520.0
+south of Timor,1,0.01,4.8,4.8,10.0
+Bermuda,1,0.01,4.0,4.0,10.0
+southeast of the Galapagos Islands,1,0.01,4.5,4.5,10.0
+Netherlands,1,0.01,3.8,3.8,5.0
+Tennessee,1,0.01,4.1,4.1,25.4
+South Dakota,1,0.01,3.6,3.6,5.0
+Japan Earthquake,1,0.01,7.6,7.6,40.7
+Palau region,1,0.01,4.4,4.4,10.0
+Taiwan Earthquake,1,0.01,6.0,6.0,8.0
+2025 Southern Tibetan Plateau Earthquake,1,0.01,7.1,7.1,10.0
+south of Australia,1,0.01,4.7,4.7,10.0
+South Georgia Rise,1,0.01,4.6,4.6,10.0
+Syria,1,0.01,4.4,4.4,10.0
+east of Severnaya Zemlya,1,0.01,4.9,4.9,10.0
+south of Alaska,1,0.01,3.9,3.9,10.0
+United Arab Emirates,1,0.01,4.3,4.3,11.5
+Trinidad and Tobago,1,0.01,4.4,4.4,76.9
+Saint Vincent and the Grenadines,1,0.01,4.8,4.8,139.2
+Iraq,1,0.01,4.3,4.3,10.0
+south of the Mariana Islands,1,0.01,5.1,5.1,35.0
+southern Pacific Ocean,1,0.01,4.6,4.6,10.0
+Arizona,1,0.01,3.6,3.6,5.0
+Bhutan,1,0.01,4.3,4.3,41.1
+Georgia,1,0.01,4.1,4.1,9.1
+United Kingdom,1,0.01,3.9,3.9,10.0
+Saint Kitts and Nevis,1,0.01,4.1,4.1,91.2
+southeast central Pacific Ocean,1,0.01,5.2,5.2,10.0
+north of Franz Josef Land,1,0.01,5.2,5.2,10.0
+south of the Aleutian Islands,1,0.01,3.6,3.6,10.0
+Haiti,1,0.01,3.9,3.9,10.0
+southwest of Australia,1,0.01,4.7,4.7,10.0
+Alaska Earthquake,1,0.01,7.3,7.3,38.0
+Arctic Ocean,1,0.01,4.7,4.7,10.0
+Beaufort Sea,1,0.01,5.3,5.3,10.0
+Federated States of Micronesia region,1,0.01,4.6,4.6,10.0
+North Korea,1,0.01,4.1,4.1,557.8
+2025 Drake Passage Earthquake,1,0.01,7.4,7.4,10.0
+east of the Philippine Islands,1,0.01,6.2,6.2,10.0
+Gabon,1,0.01,4.3,4.3,10.0
+Saint Eustatius and Saba,1,0.01,4.4,4.4,126.3
+Maine,1,0.01,3.8,3.8,10.6
+Thailand,1,0.01,4.2,4.2,10.0
+2025 Southern Drake Passage Earthquake,1,0.01,7.5,7.5,10.0
+Louisiana,1,0.01,3.5,3.5,5.0
+Kuwait,1,0.01,4.3,4.3,10.0
+Djibouti,1,0.01,4.5,4.5,10.0
+Burma (Myanmar) Earthquake,1,0.01,7.7,7.7,10.0
+west of Vancouver Island,1,0.01,4.2,4.2,10.0
+Svalbard region,1,0.01,4.9,4.9,10.0
+2025 Hubbard Glacier Earthquake,1,0.01,7.0,7.0,10.3
+Bahamas,1,0.01,4.1,4.1,10.0
+Switzerland,1,0.01,4.1,4.1,10.0

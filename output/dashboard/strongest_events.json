@@ -1,0 +1,102 @@
+[
+    {
+      "id": "us6000qw60",
+      "event_date": "2025-07-29",
+      "time": "2025-07-29 23:24:52.483",
+      "mag": 8.8,
+      "magType": "mww",
+      "depth": 35.0,
+      "region": "Russia Earthquake",
+      "place": "2025 Kamchatka Peninsula, Russia Earthquake"
+    },
+    {
+      "id": "us7000qx2g",
+      "event_date": "2025-09-18",
+      "time": "2025-09-18 18:58:14.939",
+      "mag": 7.8,
+      "magType": "mww",
+      "depth": 27.0,
+      "region": "Russia",
+      "place": "140 km E of Petropavlovsk-Kamchatsky, Russia"
+    },
+    {
+      "id": "us7000pn9s",
+      "event_date": "2025-03-28",
+      "time": "2025-03-28 06:20:52.715",
+      "mag": 7.7,
+      "magType": "mww",
+      "depth": 10.0,
+      "region": "Burma (Myanmar) Earthquake",
+      "place": "2025 Mandalay, Burma (Myanmar) Earthquake"
+    },
+    {
+      "id": "us6000rgf4",
+      "event_date": "2025-10-10",
+      "time": "2025-10-10 20:29:20.075",
+      "mag": 7.6,
+      "magType": "mww",
+      "depth": 5.639,
+      "region": "Drake Passage",
+      "place": "Drake Passage"
+    },
+    {
+      "id": "us7000pcdl",
+      "event_date": "2025-02-08",
+      "time": "2025-02-08 23:23:14.697",
+      "mag": 7.6,
+      "magType": "mww",
+      "depth": 14.326,
+      "region": "Cayman Islands",
+      "place": "210 km SSW of George Town, Cayman Islands"
+    },
+    {
+      "id": "us6000rtdt",
+      "event_date": "2025-12-08",
+      "time": "2025-12-08 14:15:09.896",
+      "mag": 7.6,
+      "magType": "mww",
+      "depth": 40.72,
+      "region": "Japan Earthquake",
+      "place": "2025 Aomori Prefecture, Japan Earthquake"
+    },
+    {
+      "id": "us6000r2xq",
+      "event_date": "2025-08-22",
+      "time": "2025-08-22 02:16:18.246",
+      "mag": 7.5,
+      "magType": "mww",
+      "depth": 10.0,
+      "region": "2025 Southern Drake Passage Earthquake",
+      "place": "2025 Southern Drake Passage Earthquake"
+    },
+    {
+      "id": "us7000pwkn",
+      "event_date": "2025-05-02",
+      "time": "2025-05-02 12:58:26.014",
+      "mag": 7.4,
+      "magType": "mww",
+      "depth": 10.0,
+      "region": "2025 Drake Passage Earthquake",
+      "place": "2025 Drake Passage Earthquake"
+    },
+    {
+      "id": "us7000qdyl",
+      "event_date": "2025-07-20",
+      "time": "2025-07-20 06:49:04.327",
+      "mag": 7.4,
+      "magType": "mww",
+      "depth": 34.0,
+      "region": "Russia Earthquake",
+      "place": "2025 Eastern Kamchatka, Russia Earthquake"
+    },
+    {
+      "id": "us7000qvw5",
+      "event_date": "2025-09-13",
+      "time": "2025-09-13 02:37:56.761",
+      "mag": 7.4,
+      "magType": "mww",
+      "depth": 58.0,
+      "region": "Russia",
+      "place": "105 km E of Petropavlovsk-Kamchatsky, Russia"
+    }
+]

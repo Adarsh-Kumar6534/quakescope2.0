@@ -1,0 +1,37 @@
+{
+  "project": "QuakeScope",
+  "stage": "1.1",
+  "generated_at": "2026-10-17T01:17:49.678",
+  "environment": {
+    "spark_version": "3.5.6",
+    "scala_version": "version 2.12.18",
+    "java_version": "1.8.0_504",
+    "dataset_path": "/mnt/c/QuakeScope/query.csv"
+  },
+  "cleaning_reconciliation": {
+    "original_rows": 19705,
+    "duplicate_rows_removed": 0,
+    "missing_essential_fields": 0,
+    "invalid_timestamps": 0,
+    "invalid_coordinates": 0,
+    "invalid_magnitude": 0,
+    "invalid_depth_subsurface": 1,
+    "excluded_non_earthquake": 16,
+    "total_excluded": 17,
+    "cleaned_retained_rows": 19688,
+    "retained_missing_optional_quality": 268,
+    "reconciliation_balanced": true
+  },
+  "overall_kpis": {
+    "total_events": 19688,
+    "min_magnitude": 3.5,
+    "max_magnitude": 8.8,
+    "avg_magnitude": 4.456,
+    "stddev_magnitude": 0.428,
+    "min_depth_km": 0.0,
+    "max_depth_km": 669.556,
+    "avg_depth_km": 70.69,
+    "stddev_depth_km": 121.81
+  }
+}
+         

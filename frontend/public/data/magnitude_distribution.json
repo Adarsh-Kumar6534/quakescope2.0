@@ -1,0 +1,37 @@
+[
+    {
+      "category": "Minor (3.5-3.9)",
+      "count": 1345,
+      "percentage": 6.83,
+      "avg_mag": 3.7,
+      "avg_depth": 47.17
+    },
+    {
+      "category": "Light (4.0-4.9)",
+      "count": 16207,
+      "percentage": 82.32,
+      "avg_mag": 4.41,
+      "avg_depth": 76.02
+    },
+    {
+      "category": "Moderate (5.0-5.9)",
+      "count": 1990,
+      "percentage": 10.11,
+      "avg_mag": 5.23,
+      "avg_depth": 45.51
+    },
+    {
+      "category": "Strong (6.0-6.9)",
+      "count": 130,
+      "percentage": 0.66,
+      "avg_mag": 6.25,
+      "avg_depth": 39.86
+    },
+    {
+      "category": "Major (>=7.0)",
+      "count": 16,
+      "percentage": 0.08,
+      "avg_mag": 7.48,
+      "avg_depth": 26.4
+    }
+]
