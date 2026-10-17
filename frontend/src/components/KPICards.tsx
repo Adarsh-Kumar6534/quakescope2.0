@@ -53,8 +53,8 @@ export const KPICards: React.FC<KPICardsProps> = ({
       {/* Editorial Row 1: Two Prominent Primary Anchors */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 relative">
         {/* Environmental chromatic backlight to illuminate the liquid glass cards */}
-        <div className="absolute -top-10 left-4 w-[480px] h-56 bg-cyan-400/25 rounded-full blur-[80px] pointer-events-none -z-10" />
-        <div className="absolute -top-10 right-4 w-[400px] h-56 bg-rose-500/25 rounded-full blur-[80px] pointer-events-none -z-10" />
+        <div className="absolute -top-10 left-4 w-[480px] h-56 bg-cyan-400/45 dark:bg-cyan-400/30 rounded-full blur-[70px] pointer-events-none z-0" />
+        <div className="absolute -top-10 right-4 w-[400px] h-56 bg-rose-500/45 dark:bg-rose-500/30 rounded-full blur-[70px] pointer-events-none z-0" />
 
         {/* Anchor 1: Cleaned Seismic Events with Real Sparkline (7 cols on lg) */}
         <div className="lg:col-span-7 liquid-glass-card p-6 flex flex-col justify-between relative overflow-hidden group">
@@ -63,20 +63,20 @@ export const KPICards: React.FC<KPICardsProps> = ({
 
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
             <div>
-              <div className="flex items-center space-x-2 text-xs font-semibold text-cyan-200 tracking-wide uppercase">
-                <span className="p-1.5 rounded-xl liquid-glass-pill text-cyan-200 inline-flex items-center justify-center">
+              <div className="flex items-center space-x-2 text-xs font-bold text-cyan-700 dark:text-cyan-300 tracking-wide uppercase">
+                <span className="p-1.5 rounded-xl bg-cyan-500/20 dark:bg-cyan-500/25 border border-cyan-500/40 text-cyan-800 dark:text-cyan-300 inline-flex items-center justify-center">
                   <Activity className="w-3.5 h-3.5" />
                 </span>
                 <span className="tracking-wider">Verified Seismic Catalog</span>
               </div>
-              <h3 className="text-sm text-slate-200 mt-2 font-medium">
+              <h3 className="text-sm text-slate-900 dark:text-white mt-2 font-bold tracking-tight">
                 Cleaned Earthquake Records
               </h3>
               <div className="flex items-baseline space-x-2.5 mt-2">
-                <span className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono drop-shadow-sm">
+                <span className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight font-mono drop-shadow-sm">
                   {kpis.total_events.toLocaleString()}
                 </span>
-                <span className="text-xs text-slate-300 font-sans">
+                <span className="text-xs text-cyan-700 dark:text-cyan-200 font-sans font-semibold">
                   events (M3.5 – 8.8)
                 </span>
               </div>
@@ -84,9 +84,9 @@ export const KPICards: React.FC<KPICardsProps> = ({
 
             {/* Sparkline of actual monthly frequencies */}
             <div className="sm:self-end flex flex-col items-start sm:items-end">
-              <span className="text-[10px] font-mono text-slate-200 mb-1.5 px-2 py-0.5 rounded-lg liquid-glass-pill flex items-center space-x-1.5">
+              <span className="text-xs font-mono font-bold text-cyan-800 dark:text-cyan-200 mb-1.5 px-3 py-1 rounded-xl bg-cyan-500/20 dark:bg-cyan-500/25 border border-cyan-500/40 flex items-center space-x-1.5 shadow-sm">
                 <span>13-Month Trend</span>
-                <span className="w-1.5 h-1.5 rounded-full bg-cyan-300 animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 dark:bg-cyan-300 animate-pulse" />
               </span>
               <svg
                 width={width}
@@ -97,16 +97,17 @@ export const KPICards: React.FC<KPICardsProps> = ({
               >
                 <defs>
                   <linearGradient id="sparkGradient" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#38bdf8" stopOpacity={0.45} />
-                    <stop offset="100%" stopColor="#38bdf8" stopOpacity={0.0} />
+                    <stop offset="0%" stopColor="#0284c7" stopOpacity={0.45} />
+                    <stop offset="100%" stopColor="#0284c7" stopOpacity={0.0} />
                   </linearGradient>
                 </defs>
                 <path d={areaPath} fill="url(#sparkGradient)" />
                 <path
                   d={sparklinePath}
                   fill="none"
-                  stroke="#38bdf8"
-                  strokeWidth="2.2"
+                  stroke="currentColor"
+                  className="text-cyan-600 dark:text-cyan-400"
+                  strokeWidth="2.4"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
@@ -124,14 +125,14 @@ export const KPICards: React.FC<KPICardsProps> = ({
           </div>
 
           {/* Footer note: Audit reconciliation equation */}
-          <div className="pt-3 mt-4 border-t border-white/20 flex flex-wrap items-center justify-between text-xs text-slate-300 gap-2">
-            <span className="font-mono text-[11px] text-slate-200">
+          <div className="pt-3 mt-4 border-t border-slate-200 dark:border-white/20 flex flex-wrap items-center justify-between text-xs gap-2">
+            <span className="font-mono text-[11px] text-slate-700 dark:text-slate-200 font-semibold">
               19,705 raw rows − 17 excluded (1 depth &lt; 0 km, 16 non-earthquakes)
             </span>
             {onOpenAudit && (
               <button
                 onClick={onOpenAudit}
-                className="liquid-glass-pill px-3 py-1 text-cyan-200 hover:text-white text-[11px] font-medium transition-all cursor-pointer flex items-center gap-1"
+                className="px-3.5 py-1.5 rounded-xl bg-cyan-500/20 dark:bg-cyan-500/25 border border-cyan-500/40 text-cyan-800 dark:text-cyan-300 hover:bg-cyan-500/30 text-[11px] font-bold transition-all cursor-pointer flex items-center gap-1 shadow-sm"
               >
                 Inspect Audit Formula →
               </button>
@@ -146,41 +147,41 @@ export const KPICards: React.FC<KPICardsProps> = ({
 
           <div>
             <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2 text-xs font-semibold text-rose-200 tracking-wide uppercase">
-                <span className="p-1.5 rounded-xl liquid-glass-pill text-rose-300 inline-flex items-center justify-center">
+              <div className="flex items-center space-x-2 text-xs font-bold text-rose-700 dark:text-rose-300 tracking-wide uppercase">
+                <span className="p-1.5 rounded-xl bg-rose-500/20 dark:bg-rose-500/25 border border-rose-500/40 text-rose-800 dark:text-rose-300 inline-flex items-center justify-center">
                   <Flame className="w-3.5 h-3.5" />
                 </span>
                 <span className="tracking-wider">Peak Catalog Energy</span>
               </div>
-              <span className="text-[10px] font-mono px-2.5 py-1 rounded-full liquid-glass-pill text-rose-200 font-bold">
+              <span className="text-xs font-mono font-black px-3 py-1 rounded-full text-rose-800 dark:text-rose-200 bg-rose-500/20 dark:bg-rose-500/30 border border-rose-500/50 shadow-sm">
                 Great Quake
               </span>
             </div>
 
             <div className="flex items-baseline space-x-2.5 mt-2">
-              <span className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-rose-50 drop-shadow-sm">
+              <span className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight font-mono drop-shadow-sm">
                 Mw {kpis.max_magnitude.toFixed(2)}
               </span>
-              <span className="text-xs text-rose-200/90 font-sans">
+              <span className="text-xs text-rose-700 dark:text-rose-200 font-sans font-semibold">
                 Moment Magnitude (Mww)
               </span>
             </div>
 
-            <h4 className="text-sm font-semibold text-white mt-2">
+            <h4 className="text-sm font-bold text-slate-900 dark:text-white mt-2">
               2025 Kamchatka Megathrust
             </h4>
-            <p className="text-xs text-slate-200 mt-0.5 leading-relaxed">
+            <p className="text-xs text-slate-700 dark:text-slate-100 mt-0.5 leading-relaxed font-medium">
               Pacific-Okhotsk subduction plate boundary · Hypocenter 35.0 km depth.
             </p>
           </div>
 
           {/* Footer note: Timestamp & Action */}
-          <div className="pt-3 mt-4 border-t border-white/20 flex items-center justify-between text-xs text-slate-300">
-            <span className="font-mono text-[11px] text-slate-200">2025-07-29 23:24:52 UTC</span>
+          <div className="pt-3 mt-4 border-t border-slate-200 dark:border-white/20 flex items-center justify-between text-xs">
+            <span className="font-mono text-[11px] text-slate-700 dark:text-slate-200 font-semibold">2025-07-29 23:24:52 UTC</span>
             {onSelectEvent && (
               <button
                 onClick={onSelectEvent}
-                className="liquid-glass-pill px-3 py-1 text-rose-200 hover:text-white text-[11px] font-medium transition-all cursor-pointer flex items-center gap-1"
+                className="px-3.5 py-1.5 rounded-xl bg-rose-500/20 dark:bg-rose-500/25 border border-rose-500/40 text-rose-800 dark:text-rose-200 hover:bg-rose-500/30 text-[11px] font-bold transition-all cursor-pointer flex items-center gap-1 shadow-sm"
               >
                 View on Map →
               </button>

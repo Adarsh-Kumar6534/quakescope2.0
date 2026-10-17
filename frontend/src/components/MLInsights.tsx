@@ -27,30 +27,30 @@ export const MLInsights: React.FC<MLInsightsProps> = ({ mllib }) => {
       {/* Section Header: Model Evaluation Inquiry - Signature Liquid Glass Material */}
       <div className="liquid-glass-card p-6 lg:p-8 relative overflow-hidden group">
         {/* Environmental chromatic backlight */}
-        <div className="absolute -top-12 left-1/4 w-[500px] h-48 bg-emerald-400/20 rounded-full blur-[80px] pointer-events-none -z-10" />
-        <div className="absolute -top-12 right-12 w-[350px] h-48 bg-cyan-400/20 rounded-full blur-[80px] pointer-events-none -z-10" />
+        <div className="absolute -top-12 left-1/4 w-[500px] h-48 bg-emerald-400/40 dark:bg-emerald-400/25 rounded-full blur-[70px] pointer-events-none z-0" />
+        <div className="absolute -top-12 right-6 w-[400px] h-48 bg-cyan-400/45 dark:bg-cyan-400/30 rounded-full blur-[70px] pointer-events-none z-0" />
 
-        <div className="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-white/15 gap-3">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-slate-200 dark:border-white/15 gap-3">
           <div>
-            <div className="flex items-center space-x-2">
-              <BrainCircuit className="w-5 h-5 text-emerald-300" />
-              <span className="text-[10px] font-bold tracking-wider uppercase text-emerald-300 font-mono">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-xl bg-emerald-500/20 dark:bg-emerald-500/25 border border-emerald-500/40 text-emerald-800 dark:text-emerald-300 shadow-sm">
+              <BrainCircuit className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />
+              <span className="text-xs font-black tracking-wider uppercase font-mono">
                 Model Evaluation Inquiry
               </span>
             </div>
-            <h3 className="text-base sm:text-lg font-semibold text-white tracking-tight mt-1">
+            <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight mt-2">
               Where does the classifier perform well, and where does it fail?
             </h3>
-            <p className="text-xs text-slate-300 mt-0.5">
+            <p className="text-xs text-slate-700 dark:text-slate-100 mt-0.5 font-medium">
               Diagnostic evaluation of the Apache Spark MLlib Decision Tree across dominant and minority seismic classes (3,827 test events)
             </p>
           </div>
 
-          <div className="flex items-center space-x-2 text-xs">
-            <span className="liquid-glass-pill px-3 py-1 text-emerald-200 font-mono text-xs font-semibold">
+          <div className="flex items-center space-x-2.5 text-xs">
+            <span className="px-3.5 py-1.5 rounded-xl font-mono text-xs font-black bg-emerald-500/20 dark:bg-emerald-500/30 text-emerald-800 dark:text-emerald-300 border border-emerald-500/50 shadow-sm">
               Accuracy: {(evaluation_metrics.test_accuracy * 100).toFixed(2)}%
             </span>
-            <span className="liquid-glass-pill px-3 py-1 text-slate-200 font-mono text-xs">
+            <span className="px-3.5 py-1.5 rounded-xl font-mono text-xs font-black bg-cyan-500/20 dark:bg-cyan-500/25 text-cyan-800 dark:text-cyan-200 border border-cyan-500/40 dark:border-cyan-400/40 shadow-sm">
               Depth: {mllib.tree_depth} · Nodes: {mllib.tree_num_nodes}
             </span>
           </div>
@@ -59,36 +59,36 @@ export const MLInsights: React.FC<MLInsightsProps> = ({ mllib }) => {
         {/* Model Architecture & Features Metadata Bar */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 text-xs">
           <div className="p-3.5 rounded-xl liquid-glass-pill border border-white/20 shadow-md">
-            <span className="text-[11px] font-bold text-white uppercase tracking-wider block">Target Column</span>
-            <span className="font-mono text-cyan-300 font-bold text-sm block mt-0.5">{mllib.target_column}</span>
-            <span className="text-[11px] font-semibold text-slate-200 block mt-1">3 Multiclass Tiers</span>
+            <span className="text-[11px] font-bold text-slate-800 dark:text-white uppercase tracking-wider block">Target Column</span>
+            <span className="font-mono text-cyan-600 dark:text-cyan-300 font-bold text-sm block mt-0.5">{mllib.target_column}</span>
+            <span className="text-[11px] font-semibold text-slate-600 dark:text-slate-200 block mt-1">3 Multiclass Tiers</span>
           </div>
           <div className="p-3.5 rounded-xl liquid-glass-pill border border-white/20 shadow-md">
-            <span className="text-[11px] font-bold text-white uppercase tracking-wider block">Input Features</span>
-            <span className="font-mono text-white font-bold text-xs block mt-0.5">latitude, longitude, depth</span>
-            <span className="text-[11px] font-semibold text-emerald-300 block mt-1">Zero Target Leakage</span>
+            <span className="text-[11px] font-bold text-slate-800 dark:text-white uppercase tracking-wider block">Input Features</span>
+            <span className="font-mono text-slate-900 dark:text-white font-bold text-xs block mt-0.5">latitude, longitude, depth</span>
+            <span className="text-[11px] font-semibold text-emerald-600 dark:text-emerald-300 block mt-1">Zero Target Leakage</span>
           </div>
           <div className="p-3.5 rounded-xl liquid-glass-pill border border-white/20 shadow-md">
-            <span className="text-[11px] font-bold text-white uppercase tracking-wider block">Split Partitioning</span>
-            <span className="font-mono text-white font-bold text-xs block mt-0.5">
+            <span className="text-[11px] font-bold text-slate-800 dark:text-white uppercase tracking-wider block">Split Partitioning</span>
+            <span className="font-mono text-slate-900 dark:text-white font-bold text-xs block mt-0.5">
               {mllib.training_records.toLocaleString()} Train / {mllib.test_records.toLocaleString()} Test
             </span>
-            <span className="text-[11px] font-semibold text-slate-200 block mt-1">{mllib.split_ratio} Deterministic</span>
+            <span className="text-[11px] font-semibold text-slate-600 dark:text-slate-200 block mt-1">{mllib.split_ratio} Deterministic</span>
           </div>
           <div className="p-3.5 rounded-xl liquid-glass-pill border border-white/20 shadow-md">
-            <span className="text-[11px] font-bold text-white uppercase tracking-wider block">Baseline Comparison</span>
+            <span className="text-[11px] font-bold text-slate-800 dark:text-white uppercase tracking-wider block">Baseline Comparison</span>
             <div className="flex items-baseline space-x-1.5 mt-0.5">
-              <span className="font-mono text-emerald-300 font-extrabold text-sm">
+              <span className="font-mono text-emerald-600 dark:text-emerald-300 font-extrabold text-sm">
                 +{(
                   (evaluation_metrics.test_accuracy - evaluation_metrics.majority_baseline_accuracy) *
                   100
                 ).toFixed(2)}%
               </span>
-              <span className="text-[11px] font-medium text-white/90">
+              <span className="text-[11px] font-medium text-slate-600 dark:text-white/90">
                 over {(evaluation_metrics.majority_baseline_accuracy * 100).toFixed(2)}% baseline
               </span>
             </div>
-            <span className="text-[11px] font-semibold text-slate-200 block mt-1">Majority-Class Dummy</span>
+            <span className="text-[11px] font-semibold text-slate-600 dark:text-slate-200 block mt-1">Majority-Class Dummy</span>
           </div>
         </div>
       </div>
@@ -144,22 +144,22 @@ export const MLInsights: React.FC<MLInsightsProps> = ({ mllib }) => {
         {/* Labeled Confusion Matrix - Signature Liquid Glass Material */}
         <div className="liquid-glass-card p-6 lg:p-7 flex flex-col justify-between relative overflow-hidden group">
           {/* Chromatic backlight flares */}
-          <div className="absolute -top-12 -left-12 w-64 h-64 bg-cyan-400/20 rounded-full blur-[70px] pointer-events-none -z-10" />
-          <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-violet-500/20 rounded-full blur-[70px] pointer-events-none -z-10" />
+          <div className="absolute -top-12 -left-12 w-64 h-64 bg-cyan-400/35 dark:bg-cyan-400/20 rounded-full blur-[70px] pointer-events-none -z-10" />
+          <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-violet-500/35 dark:bg-violet-500/20 rounded-full blur-[70px] pointer-events-none -z-10" />
 
           <div>
-            <div className="flex items-center justify-between pb-3 border-b border-white/15">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-white/15">
               <div className="flex items-center space-x-2">
-                <BrainCircuit className="w-4 h-4 text-cyan-300" />
-                <h4 className="text-base font-semibold text-white tracking-tight">
+                <BrainCircuit className="w-4 h-4 text-cyan-600 dark:text-cyan-300" />
+                <h4 className="text-base font-bold text-slate-900 dark:text-white tracking-tight">
                   Labeled Confusion Matrix
                 </h4>
               </div>
-              <span className="text-xs font-mono text-cyan-200 liquid-glass-pill px-2.5 py-0.5 rounded-full">
+              <span className="text-xs font-mono font-bold text-cyan-800 dark:text-cyan-200 bg-cyan-500/15 dark:bg-cyan-500/25 border border-cyan-500/40 px-3 py-1 rounded-full shadow-sm">
                 3,827 Test Samples
               </span>
             </div>
-            <p className="text-xs text-slate-300 mt-1 mb-4">
+            <p className="text-xs text-slate-700 dark:text-slate-100 mt-1 mb-4 font-medium">
               Rows denote ground truth actual classes; columns denote model predicted classes.
             </p>
 
@@ -236,22 +236,22 @@ export const MLInsights: React.FC<MLInsightsProps> = ({ mllib }) => {
         {/* Detailed Per-Class Performance Table - Signature Liquid Glass Material */}
         <div className="liquid-glass-card p-6 lg:p-7 flex flex-col justify-between relative overflow-hidden group">
           {/* Chromatic backlight flares */}
-          <div className="absolute -top-12 -right-12 w-64 h-64 bg-violet-500/20 rounded-full blur-[70px] pointer-events-none -z-10" />
-          <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-indigo-500/20 rounded-full blur-[70px] pointer-events-none -z-10" />
+          <div className="absolute -top-12 -right-12 w-64 h-64 bg-violet-500/35 dark:bg-violet-500/20 rounded-full blur-[70px] pointer-events-none -z-10" />
+          <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-indigo-500/35 dark:bg-indigo-500/20 rounded-full blur-[70px] pointer-events-none -z-10" />
 
           <div>
-            <div className="flex items-center justify-between pb-3 border-b border-white/15">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-white/15">
               <div className="flex items-center space-x-2">
-                <GitBranch className="w-4 h-4 text-violet-300" />
-                <h4 className="text-base font-semibold text-white tracking-tight">
+                <GitBranch className="w-4 h-4 text-violet-600 dark:text-violet-300" />
+                <h4 className="text-base font-bold text-slate-900 dark:text-white tracking-tight">
                   Per-Class Precision, Recall & F1
                 </h4>
               </div>
-              <span className="text-xs font-mono text-violet-200 liquid-glass-pill px-2.5 py-0.5 rounded-full">
+              <span className="text-xs font-mono font-bold text-violet-800 dark:text-violet-200 bg-violet-500/15 dark:bg-violet-500/25 border border-violet-500/40 px-3 py-1 rounded-full shadow-sm">
                 Class-Level Auditing
               </span>
             </div>
-            <p className="text-xs text-slate-300 mt-1 mb-4">
+            <p className="text-xs text-slate-700 dark:text-slate-100 mt-1 mb-4 font-medium">
               Evaluating precision vs recall trade-offs across imbalanced magnitude tiers.
             </p>
 

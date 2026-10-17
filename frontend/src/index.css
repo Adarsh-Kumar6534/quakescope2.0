@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 @import "leaflet/dist/leaflet.css";
 
 @layer base {
@@ -44,6 +45,44 @@
     --text-muted: #64748b;
   }
 
+  /* Light Theme Design Tokens */
+  :root.light,
+  html.light {
+    --bg-base: #f8fafc;
+
+    /* Light Liquid Glass Material System Tokens */
+    --glass-surface-subtle: rgba(255, 255, 255, 0.65);
+    --glass-surface: rgba(255, 255, 255, 0.72);
+    --glass-surface-hero: rgba(255, 255, 255, 0.75);
+    --glass-surface-chart: rgba(255, 255, 255, 0.75);
+    --glass-surface-elevated: rgba(255, 255, 255, 0.88);
+    --glass-surface-modal: rgba(255, 255, 255, 0.95);
+    --glass-surface-inset: rgba(255, 255, 255, 0.50);
+    --glass-surface-hover: rgba(255, 255, 255, 0.80);
+
+    /* Light Borders & Specular Glints */
+    --glass-border: rgba(255, 255, 255, 0.85);
+    --glass-border-subtle: rgba(148, 163, 184, 0.25);
+    --glass-border-specular: rgba(255, 255, 255, 1);
+    --glass-border-active: rgba(2, 132, 199, 0.60);
+
+    /* Light Depth Shadows */
+    --glass-shadow: 0 10px 30px -6px rgba(15, 23, 42, 0.07), 0 2px 8px -2px rgba(15, 23, 42, 0.04);
+    --glass-shadow-elevated: 0 20px 50px -10px rgba(15, 23, 42, 0.12), 0 4px 16px -2px rgba(15, 23, 42, 0.06);
+    --glass-inset-highlight: inset 0 1.5px 0 0 rgba(255, 255, 255, 1);
+    --glass-inset-subtle: inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+
+    /* Light Accents & High-Contrast Typography */
+    --accent-cyan: #0284c7;
+    --accent-teal: #0d9488;
+    --accent-electric: #0369a1;
+    --accent-violet: #7c3aed;
+    --accent-indigo: #4f46e5;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+  }
+
   * {
     box-sizing: border-box;
   }
@@ -58,6 +97,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
@@ -84,6 +124,25 @@
     linear-gradient(180deg, #040711 0%, #060a17 25%, #070d1e 50%, #060b18 75%, #040712 100%);
 }
 
+/* 1b. Vibrant Atmospheric Light Gradient Background (Light Theme) */
+.light .seismic-atmosphere {
+  background:
+    /* High-energy electric sky-cyan aurora (top-left) */
+    radial-gradient(ellipse 1350px 750px at 10% 0%, rgba(2, 132, 199, 0.55) 0%, rgba(14, 165, 233, 0.36) 45%, transparent 72%),
+    /* Vibrant sunrise coral-rose energy bloom (top-right) */
+    radial-gradient(ellipse 1250px 700px at 90% 4%, rgba(244, 63, 94, 0.50) 0%, rgba(251, 113, 133, 0.32) 45%, transparent 70%),
+    /* Rich radiant spring teal & jade wash (mid-left) */
+    radial-gradient(ellipse 1250px 750px at 12% 44%, rgba(13, 148, 136, 0.44) 0%, rgba(20, 184, 166, 0.28) 45%, transparent 70%),
+    /* Vivid celestial iris-violet atmosphere (mid-right) */
+    radial-gradient(ellipse 1350px 800px at 90% 50%, rgba(147, 51, 234, 0.46) 0%, rgba(168, 85, 247, 0.30) 45%, transparent 72%),
+    /* Royal blue & azure mantle wash (lower-left) */
+    radial-gradient(ellipse 1250px 750px at 14% 86%, rgba(79, 70, 229, 0.44) 0%, rgba(99, 102, 241, 0.26) 45%, transparent 72%),
+    /* Warm rose-amethyst floor (lower-right) */
+    radial-gradient(ellipse 1100px 600px at 84% 94%, rgba(225, 29, 72, 0.38) 0%, rgba(244, 63, 94, 0.22) 45%, transparent 70%),
+    /* Saturated daylight atmospheric gradient foundation (punchy on any monitor) */
+    linear-gradient(180deg, #e0f2fe 0%, #dbeafe 22%, #ede9fe 50%, #fae8ff 78%, #e0f2fe 100%);
+}
+
 /* Subtle Topographic Seismographic Waveform Contours */
 .seismic-topography {
   position: fixed;
@@ -98,6 +157,14 @@
   background-size: 180px 180px, 240px 240px, 300px 300px;
 }
 
+.light .seismic-topography {
+  opacity: 0.055;
+  background-image: 
+    radial-gradient(circle at 50% 50%, transparent 0%, transparent 40%, #0f172a 41%, transparent 42%),
+    radial-gradient(circle at 20% 80%, transparent 0%, transparent 30%, #0284c7 31%, transparent 32%),
+    radial-gradient(circle at 80% 20%, transparent 0%, transparent 35%, #7c3aed 36%, transparent 37%);
+}
+
 /* Precision Observatory Measurement Grid */
 .seismic-grid-pattern {
   position: fixed;
@@ -110,6 +177,12 @@
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, #000 45%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, #000 45%, transparent 100%);
+}
+
+.light .seismic-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.045) 1px, transparent 1px);
 }
 
 /* 2. Unified Transparent Liquid Glass Hierarchy */
@@ -422,4 +495,537 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ==========================================================================
+   Light Mode Glass Materials & Apple Liquid Glass Hierarchy
+   ========================================================================== */
+.liquid-glass-card > *:not(.absolute) {
+  position: relative;
+  z-index: 2;
+}
+
+.light .liquid-glass-card {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.65) 0%,
+    rgba(240, 249, 255, 0.40) 45%,
+    rgba(253, 242, 248, 0.48) 100%
+  ) !important;
+  backdrop-filter: blur(28px) saturate(220%) contrast(110%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(220%) contrast(110%) !important;
+  border-radius: 28px;
+  border: 1.5px solid rgba(255, 255, 255, 0.90) !important;
+  border-top: 2.5px solid #ffffff !important;
+  border-left: 2px solid rgba(255, 255, 255, 0.98) !important;
+  box-shadow:
+    /* Specular mirror bevel edge */
+    inset 0 2px 2px 0 #ffffff,
+    /* Soft bottom refraction glint */
+    inset 0 -1.5px 2px 0 rgba(255, 255, 255, 0.50),
+    /* Left rim light catch */
+    inset 2px 0 2px 0 #ffffff,
+    /* Deep liquid glass drop shadow */
+    0 20px 45px -10px rgba(15, 23, 42, 0.08),
+    0 4px 16px -2px rgba(14, 165, 233, 0.12) !important;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.light .liquid-glass-card:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.75) 0%,
+    rgba(240, 249, 255, 0.50) 45%,
+    rgba(253, 242, 248, 0.58) 100%
+  ) !important;
+  border-color: #ffffff !important;
+  box-shadow:
+    inset 0 2.5px 3px 0 #ffffff,
+    inset 0 -1.5px 2px 0 rgba(255, 255, 255, 0.65),
+    inset 2px 0 2.5px 0 #ffffff,
+    0 28px 60px -10px rgba(15, 23, 42, 0.12),
+    0 8px 24px -2px rgba(14, 165, 233, 0.16) !important;
+  transform: scale(1.015) translateY(-2px);
+}
+
+.light .liquid-glass-pill {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.68) 0%,
+    rgba(255, 255, 255, 0.45) 100%
+  ) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.90) !important;
+  border-top: 2px solid #ffffff !important;
+  box-shadow:
+    inset 0 1.5px 1px 0 #ffffff,
+    inset 0 -1px 1px 0 rgba(255, 255, 255, 0.40),
+    0 4px 12px rgba(15, 23, 42, 0.05) !important;
+  color: #0f172a !important;
+  font-weight: 600;
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.light .liquid-glass-pill:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(255, 255, 255, 0.60) 100%
+  ) !important;
+  border-color: #ffffff !important;
+  box-shadow:
+    inset 0 1.5px 2px 0 #ffffff,
+    0 6px 18px rgba(15, 23, 42, 0.08) !important;
+  transform: scale(1.02);
+}
+
+.light .glass-nav {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.48) 100%) !important;
+  backdrop-filter: blur(32px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.90) !important;
+  box-shadow: 
+    0 8px 32px 0 rgba(15, 23, 42, 0.06),
+    inset 0 1.5px 0 0 #ffffff !important;
+}
+
+.light .glass-nav span.bg-clip-text {
+  background-image: linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #0369a1 100%) !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+
+.light .glass-nav nav {
+  background-color: rgba(255, 255, 255, 0.60) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.85) !important;
+  border-top: 2px solid #ffffff !important;
+  box-shadow: inset 0 1px 1px 0 #ffffff, 0 2px 8px rgba(15, 23, 42, 0.04) !important;
+}
+
+.light .glass-nav nav button:not(.glass-pill-active) {
+  color: #0f172a !important;
+  font-weight: 600;
+}
+
+.light .glass-nav nav button:not(.glass-pill-active):hover {
+  color: #0284c7 !important;
+  background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.light .glass-hero {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.58) 0%,
+    rgba(255, 255, 255, 0.32) 50%,
+    rgba(255, 255, 255, 0.48) 100%
+  ) !important;
+  backdrop-filter: blur(24px) saturate(210%) contrast(108%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(210%) contrast(108%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.82) !important;
+  border-top: 2px solid #ffffff !important;
+  border-left: 1.5px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 
+    inset 0 1.5px 2px 0 #ffffff,
+    inset 0 -1px 2px 0 rgba(255, 255, 255, 0.35),
+    0 18px 42px -10px rgba(15, 23, 42, 0.08),
+    0 4px 16px -2px rgba(14, 165, 233, 0.08) !important;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.light .glass-card-primary {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.60) 0%,
+    rgba(255, 255, 255, 0.32) 50%,
+    rgba(240, 249, 255, 0.52) 100%
+  ) !important;
+  backdrop-filter: blur(24px) saturate(210%) contrast(108%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(210%) contrast(108%) !important;
+  border: 1.5px solid rgba(14, 165, 233, 0.50) !important;
+  border-top: 2px solid #ffffff !important;
+  box-shadow: 
+    inset 0 1.5px 2px 0 #ffffff,
+    0 20px 45px -10px rgba(15, 23, 42, 0.09),
+    0 6px 20px -2px rgba(14, 165, 233, 0.12) !important;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.light .glass-card {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.56) 0%,
+    rgba(255, 255, 255, 0.30) 50%,
+    rgba(255, 255, 255, 0.46) 100%
+  ) !important;
+  backdrop-filter: blur(24px) saturate(210%) contrast(108%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(210%) contrast(108%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.82) !important;
+  border-top: 2px solid #ffffff !important;
+  border-left: 1.5px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 
+    inset 0 1.5px 2px 0 #ffffff,
+    inset 0 -1px 2px 0 rgba(255, 255, 255, 0.35),
+    0 16px 38px -8px rgba(15, 23, 42, 0.08),
+    0 4px 14px -2px rgba(14, 165, 233, 0.08) !important;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.light .glass-card:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.68) 0%,
+    rgba(255, 255, 255, 0.38) 50%,
+    rgba(255, 255, 255, 0.56) 100%
+  ) !important;
+  border-color: #ffffff !important;
+  box-shadow: 
+    inset 0 2px 2.5px 0 #ffffff,
+    0 22px 48px -8px rgba(15, 23, 42, 0.12),
+    0 6px 18px -2px rgba(14, 165, 233, 0.12) !important;
+  transform: scale(1.015) translateY(-2px);
+}
+
+.light .glass-panel-chart {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.56) 0%,
+    rgba(255, 255, 255, 0.30) 50%,
+    rgba(255, 255, 255, 0.46) 100%
+  ) !important;
+  backdrop-filter: blur(24px) saturate(210%) contrast(108%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(210%) contrast(108%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.82) !important;
+  border-top: 2px solid #ffffff !important;
+  border-left: 1.5px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 
+    inset 0 1.5px 2px 0 #ffffff,
+    0 20px 45px -10px rgba(15, 23, 42, 0.08),
+    0 6px 18px -2px rgba(14, 165, 233, 0.08) !important;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.light .glass-panel-elevated {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(255, 255, 255, 0.65) 50%,
+    rgba(255, 255, 255, 0.78) 100%
+  ) !important;
+  backdrop-filter: blur(36px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(36px) saturate(190%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.90) !important;
+  border-top: 2px solid #ffffff !important;
+  box-shadow: 
+    0 30px 70px -15px rgba(15, 23, 42, 0.14),
+    inset 0 1.5px 2px 0 #ffffff !important;
+}
+
+.light .glass-sub-card {
+  background: rgba(255, 255, 255, 0.50) !important;
+  backdrop-filter: blur(16px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(160%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.75) !important;
+  border-top: 1.5px solid #ffffff !important;
+  box-shadow: inset 0 1px 1px 0 #ffffff, 0 3px 10px rgba(15, 23, 42, 0.03) !important;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.light .glass-sub-card:hover {
+  background: rgba(255, 255, 255, 0.65) !important;
+  border-color: #ffffff !important;
+}
+
+.light .glass-pill {
+  background: rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(16px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(160%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.50) !important;
+  border-top: 1.5px solid #ffffff !important;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.80) !important;
+  color: #1e293b;
+}
+
+.light .glass-pill:hover {
+  background: rgba(255, 255, 255, 0.55) !important;
+  border-color: #ffffff !important;
+  color: #0f172a;
+}
+
+.light .glass-pill-active {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.22) 0%, rgba(168, 85, 247, 0.18) 100%), rgba(255, 255, 255, 0.65) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  border: 1.5px solid rgba(2, 132, 199, 0.60) !important;
+  box-shadow: 
+    0 4px 16px rgba(14, 165, 233, 0.22),
+    inset 0 1px 1px 0 #ffffff !important;
+  color: #0284c7 !important;
+  font-weight: 600;
+}
+
+.light .glass-input {
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.60) !important;
+  border-top: 1.5px solid #ffffff !important;
+  color: #0f172a;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.04), 0 2px 6px rgba(15, 23, 42, 0.02) !important;
+}
+
+.light .glass-input:focus {
+  border-color: rgba(2, 132, 199, 0.70) !important;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.20), inset 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+  background: #ffffff !important;
+}
+
+.light .btn-glass-primary {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.16) 0%, rgba(168, 85, 247, 0.16) 100%), rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(20px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(190%) !important;
+  border: 1.5px solid rgba(2, 132, 199, 0.45) !important;
+  border-top: 1.5px solid #ffffff !important;
+  color: #0284c7 !important;
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.14), inset 0 1px 1px #ffffff !important;
+}
+
+.light .btn-glass-primary:hover {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.26) 0%, rgba(168, 85, 247, 0.24) 100%), #ffffff !important;
+  border-color: rgba(2, 132, 199, 0.70) !important;
+  box-shadow: 0 6px 22px rgba(14, 165, 233, 0.22), inset 0 1px 1px #ffffff !important;
+}
+
+/* ==========================================================================
+   Light Mode Typographic & Contrast Hierarchy
+   ========================================================================== */
+.light {
+  color: #0f172a;
+}
+
+.light .text-white {
+  color: #0f172a !important;
+}
+
+.light .text-slate-100 {
+  color: #0f172a !important;
+}
+
+.light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* High-Contrast Accents for Light Mode */
+.light .text-cyan-200,
+.light .text-cyan-300,
+.light .text-cyan-400 {
+  color: #0284c7 !important;
+}
+
+.light .text-emerald-200,
+.light .text-emerald-300,
+.light .text-emerald-400 {
+  color: #059669 !important;
+}
+
+.light .text-rose-200,
+.light .text-rose-300,
+.light .text-rose-400 {
+  color: #e11d48 !important;
+}
+
+.light .text-violet-200,
+.light .text-violet-300,
+.light .text-violet-400 {
+  color: #7c3aed !important;
+}
+
+.light .text-indigo-200,
+.light .text-indigo-300,
+.light .text-indigo-400 {
+  color: #4f46e5 !important;
+}
+
+.light .text-amber-200,
+.light .text-amber-300,
+.light .text-amber-400 {
+  color: #d97706 !important;
+}
+
+.light .text-sky-200,
+.light .text-sky-300,
+.light .text-sky-400 {
+  color: #0284c7 !important;
+}
+
+.light .text-orange-300,
+.light .text-orange-400 {
+  color: #ea580c !important;
+}
+
+/* Backgrounds & Border Dividers in Light Mode */
+.light .border-white\/10,
+.light .border-white\/15,
+.light .border-white\/20,
+.light .border-white\/30 {
+  border-color: rgba(203, 213, 225, 0.85) !important;
+}
+
+.light .divide-white\/5 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(226, 232, 240, 0.80) !important;
+}
+
+.light .bg-white\/5,
+.light .bg-white\/10,
+.light .bg-white\/\[0\.08\],
+.light .bg-white\/\[0\.06\] {
+  background-color: rgba(255, 255, 255, 0.70) !important;
+  border-color: rgba(226, 232, 240, 0.85) !important;
+}
+
+.light .bg-rose-950\/25 {
+  background-color: rgba(254, 226, 226, 0.6) !important;
+  border-color: rgba(244, 63, 94, 0.35) !important;
+}
+
+/* Text-white opacity overrides in Light Mode */
+.light .text-white\/90,
+.light .text-white\/80,
+.light .text-white\/70 {
+  color: #1e293b !important;
+}
+
+/* Badges with colored tinted backgrounds in Light Mode */
+.light .bg-rose-500\/30,
+.light .bg-rose-500\/25,
+.light .bg-rose-500\/20,
+.light .bg-rose-500\/15 {
+  background-color: rgba(244, 63, 94, 0.16) !important;
+  border-color: rgba(244, 63, 94, 0.45) !important;
+  color: #be123c !important;
+  font-weight: 700 !important;
+}
+
+.light .bg-cyan-500\/30,
+.light .bg-cyan-500\/25,
+.light .bg-cyan-500\/20,
+.light .bg-cyan-500\/15,
+.light .bg-cyan-500\/10 {
+  background-color: rgba(14, 165, 233, 0.16) !important;
+  border-color: rgba(14, 165, 233, 0.45) !important;
+  color: #0369a1 !important;
+  font-weight: 700 !important;
+}
+
+.light .bg-emerald-500\/30,
+.light .bg-emerald-500\/25,
+.light .bg-emerald-500\/20,
+.light .bg-emerald-500\/15,
+.light .bg-emerald-500\/10 {
+  background-color: rgba(16, 185, 129, 0.16) !important;
+  border-color: rgba(16, 185, 129, 0.45) !important;
+  color: #047857 !important;
+  font-weight: 700 !important;
+}
+
+.light .bg-amber-500\/30,
+.light .bg-amber-500\/25,
+.light .bg-amber-500\/20,
+.light .bg-amber-500\/15 {
+  background-color: rgba(245, 158, 11, 0.16) !important;
+  border-color: rgba(245, 158, 11, 0.45) !important;
+  color: #b45309 !important;
+  font-weight: 700 !important;
+}
+
+.light .bg-violet-500\/30,
+.light .bg-violet-500\/25,
+.light .bg-violet-500\/20,
+.light .bg-violet-500\/15 {
+  background-color: rgba(168, 85, 247, 0.16) !important;
+  border-color: rgba(168, 85, 247, 0.45) !important;
+  color: #6d28d9 !important;
+  font-weight: 700 !important;
+}
+
+.light .bg-orange-500\/20 {
+  background-color: rgba(249, 115, 22, 0.16) !important;
+  border-color: rgba(249, 115, 22, 0.45) !important;
+  color: #c2410c !important;
+  font-weight: 700 !important;
+}
+
+/* Recharts & SVG Charts Light Mode */
+.light .recharts-cartesian-grid line {
+  stroke: rgba(15, 23, 42, 0.08) !important;
+}
+
+.light .recharts-text,
+.light .recharts-label,
+.light .recharts-cartesian-axis-tick text {
+  fill: #475569 !important;
+}
+
+.light .recharts-default-tooltip {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  color: #0f172a !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.12) !important;
+  border-radius: 0.75rem !important;
+}
+
+/* Leaflet Cartography in Light Mode */
+.light .leaflet-container {
+  background: #f1f5f9 !important;
+}
+
+.light .leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(203, 213, 225, 0.9) !important;
+  box-shadow: 0 16px 35px -5px rgba(15, 23, 42, 0.12) !important;
+}
+
+.light .leaflet-popup-tip {
+  background: rgba(255, 255, 255, 0.96) !important;
+}
+
+.light .leaflet-bar a {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(203, 213, 225, 0.9) !important;
+  color: #334155 !important;
+}
+
+.light .leaflet-bar a:hover {
+  background-color: #ffffff !important;
+  color: #0284c7 !important;
+}
+
+/* Light Scrollbar */
+.light ::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.45);
+}
+
+.light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.65);
 }

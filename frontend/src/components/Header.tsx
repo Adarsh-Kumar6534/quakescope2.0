@@ -1,5 +1,6 @@
 import React from 'react';
-import { Activity, ShieldCheck, Menu, X } from 'lucide-react';
+import { ShieldCheck, Menu, X, Sun, Moon } from 'lucide-react';
+import { QuakeScopeLogo } from './QuakeScopeLogo';
 import type { KPIsAndCleaningData } from '../types/seismic';
 
 interface HeaderProps {
@@ -7,12 +8,16 @@ interface HeaderProps {
   setActiveTab: (tab: string) => void;
   kpiData?: KPIsAndCleaningData;
   onOpenAudit: () => void;
+  theme: 'dark' | 'light';
+  onToggleTheme: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   activeTab,
   setActiveTab,
   onOpenAudit,
+  theme,
+  onToggleTheme,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
@@ -28,15 +33,19 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-40 w-full glass-nav px-4 sm:px-6 lg:px-8 py-3.5 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Brand & Wordmark */}
-        <div className="flex items-center space-x-3.5">
-          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500/25 via-slate-800/80 to-violet-600/25 border border-cyan-400/40 shadow-[0_0_18px_rgba(56,189,248,0.25),inset_0_1px_0_rgba(255,255,255,0.3)]">
-            <Activity className="w-5 h-5 text-cyan-300 animate-pulse" />
-            <div className="absolute inset-0 rounded-xl bg-cyan-400/10 blur-sm pointer-events-none" />
-          </div>
+        <div className="flex items-center space-x-3.5 group cursor-pointer" onClick={() => setActiveTab('overview')}>
+          <QuakeScopeLogo size="md" theme={theme} />
           <div>
             <div className="flex items-center space-x-2">
               <span className="font-bold text-lg tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
                 QuakeScope
+              </span>
+              <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded-full border ${
+                theme === 'light'
+                  ? 'bg-sky-50 text-sky-700 border-sky-300/60 font-semibold'
+                  : 'bg-cyan-500/10 text-cyan-300 border-cyan-400/30'
+              }`}>
+                v2.0
               </span>
             </div>
             <p className="text-xs text-slate-400 hidden sm:block">
@@ -65,8 +74,28 @@ export const Header: React.FC<HeaderProps> = ({
           })}
         </nav>
 
-        {/* Right Status & Audit Trigger */}
+        {/* Right Status, Theme Toggle & Audit Trigger */}
         <div className="hidden lg:flex items-center space-x-3">
+          {/* Theme Toggle Button */}
+          <button
+            onClick={onToggleTheme}
+            className="flex items-center space-x-2 px-3 py-1.5 rounded-xl liquid-glass-pill text-xs font-semibold cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm"
+            title={theme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+            aria-label={theme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+          >
+            {theme === 'dark' ? (
+              <>
+                <Sun className="w-3.5 h-3.5 text-amber-300" />
+                <span className="text-slate-200">Light</span>
+              </>
+            ) : (
+              <>
+                <Moon className="w-3.5 h-3.5 text-indigo-600" />
+                <span className="text-slate-800">Dark</span>
+              </>
+            )}
+          </button>
+
           {/* Audit & Methodology Modal Trigger */}
           <button
             onClick={onOpenAudit}
@@ -80,6 +109,18 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Mobile menu toggle */}
         <div className="flex md:hidden items-center space-x-2">
+          <button
+            onClick={onToggleTheme}
+            className="p-1.5 rounded-lg liquid-glass-pill cursor-pointer"
+            title={theme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+            aria-label={theme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+          >
+            {theme === 'dark' ? (
+              <Sun className="w-4 h-4 text-amber-300" />
+            ) : (
+              <Moon className="w-4 h-4 text-indigo-600" />
+            )}
+          </button>
           <button
             onClick={onOpenAudit}
             className="p-1.5 rounded-lg bg-slate-800/60 border border-white/10 text-cyan-400 cursor-pointer"

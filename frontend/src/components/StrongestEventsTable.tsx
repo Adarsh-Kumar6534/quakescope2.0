@@ -87,21 +87,21 @@ export const StrongestEventsTable: React.FC<StrongestEventsTableProps> = ({
   return (
     <div className="liquid-glass-card p-6 lg:p-8 space-y-4 relative overflow-hidden group">
       {/* Environmental chromatic backlight */}
-      <div className="absolute -top-12 left-1/3 w-[450px] h-48 bg-rose-500/20 rounded-full blur-[80px] pointer-events-none -z-10" />
+      <div className="absolute -top-12 left-1/3 w-[450px] h-48 bg-rose-500/35 dark:bg-rose-500/20 rounded-full blur-[80px] pointer-events-none z-0" />
 
       {/* Header & Controls */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-white/15 gap-3">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-200 dark:border-white/15 gap-3">
         <div>
-          <div className="flex items-center space-x-2">
-            <Flame className="w-5 h-5 text-rose-300" />
-            <span className="text-[10px] font-bold tracking-wider uppercase text-rose-300 font-mono">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-xl bg-rose-500/20 dark:bg-rose-500/25 border border-rose-500/40 text-rose-800 dark:text-rose-300 shadow-sm">
+            <Flame className="w-4 h-4 text-rose-600 dark:text-rose-400" />
+            <span className="text-xs font-black tracking-wider uppercase font-mono">
               Energy Inquiry
             </span>
           </div>
-          <h3 className="text-base sm:text-lg font-semibold text-white tracking-tight mt-1">
+          <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight mt-2">
             Which recorded events have the largest magnitudes?
           </h3>
-          <p className="text-xs text-slate-300 mt-0.5">
+          <p className="text-xs text-slate-700 dark:text-slate-100 mt-0.5 font-medium">
             Ranked catalog subset of highest-energy seismic ruptures with hypocenter depth, moment magnitude, and spatial coordinates
           </p>
         </div>
@@ -117,7 +117,7 @@ export const StrongestEventsTable: React.FC<StrongestEventsTableProps> = ({
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               style={{ paddingLeft: '2.5rem' }}
-              className="glass-input py-2 text-xs w-52 sm:w-64 placeholder:text-slate-400/80 rounded-xl focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/40 transition-all"
+              className="glass-input py-2 text-xs w-52 sm:w-64 placeholder:text-slate-500 dark:placeholder:text-slate-400/80 rounded-xl focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/40 transition-all font-medium"
             />
             {searchTerm && (
               <button
@@ -133,7 +133,7 @@ export const StrongestEventsTable: React.FC<StrongestEventsTableProps> = ({
           <a
             href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/strongest_events.csv`}
             download="strongest_events.csv"
-            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl liquid-glass-pill text-xs text-slate-200 hover:text-white transition-all cursor-pointer"
+            className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-rose-500/15 dark:bg-white/10 border border-rose-500/40 dark:border-white/20 text-rose-800 dark:text-rose-200 hover:bg-rose-500/25 font-bold text-xs shadow-sm transition-all cursor-pointer"
             title="Download Stage 1 Strongest Events CSV"
           >
             <Download className="w-3.5 h-3.5" />
@@ -142,7 +142,7 @@ export const StrongestEventsTable: React.FC<StrongestEventsTableProps> = ({
           <a
             href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/strongest_events.json`}
             download="strongest_events.json"
-            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl liquid-glass-pill text-xs text-slate-200 hover:text-white transition-all cursor-pointer"
+            className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-rose-500/15 dark:bg-white/10 border border-rose-500/40 dark:border-white/20 text-rose-800 dark:text-rose-200 hover:bg-rose-500/25 font-bold text-xs shadow-sm transition-all cursor-pointer"
             title="Download Stage 1 Strongest Events JSON"
           >
             <Download className="w-3.5 h-3.5" />

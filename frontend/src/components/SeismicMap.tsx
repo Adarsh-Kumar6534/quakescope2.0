@@ -7,6 +7,7 @@ import { REGIONAL_CENTROIDS } from '../services/dataLoader';
 interface SeismicMapProps {
   strongestEvents: StrongestEvent[];
   topRegions: TopRegion[];
+  theme?: 'dark' | 'light';
 }
 
 // Sub-component to programmatically change map view smoothly
@@ -21,6 +22,7 @@ const ChangeView: React.FC<{ center: [number, number]; zoom: number }> = ({ cent
 export const SeismicMap: React.FC<SeismicMapProps> = ({
   strongestEvents,
   topRegions,
+  theme = 'dark',
 }) => {
   const [mapCenter, setMapCenter] = useState<[number, number]>([20, 10]);
   const [mapZoom, setMapZoom] = useState<number>(2);
@@ -107,7 +109,7 @@ export const SeismicMap: React.FC<SeismicMapProps> = ({
               The cartographic layer displays the <strong className="text-white">10 strongest recorded seismic events (M ≥ 7.4)</strong> whose coordinates are verified from Spark SQL Query 3 (<code className="text-cyan-300 font-mono">output/quakescope_execution.log</code> Metric 12). In strict adherence to Stage 2 data integrity rules, the full set of 19,688 earthquakes is not plotted as points without individual coordinate exports; instead, global seismicity is represented through verified regional frequency statistics below.
             </p>
             <p className="text-[11px] text-slate-400 pt-0.5">
-              Cartography streams from Esri World Dark Gray Base (free, no API key required, public academic access).
+              Cartography streams from Esri World Canvas ({theme === 'light' ? 'Light' : 'Dark'} Gray Base · free, public academic access).
             </p>
           </div>
         </div>
@@ -125,15 +127,25 @@ export const SeismicMap: React.FC<SeismicMapProps> = ({
             >
               <ChangeView center={mapCenter} zoom={mapZoom} />
 
-              {/* Esri World Dark Gray Basemap (No API key, zero watermarks) */}
+              {/* Esri World Dark / Light Gray Basemap (No API key, zero watermarks) */}
               <TileLayer
-                url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+                key={theme === 'light' ? 'light-base' : 'dark-base'}
+                url={
+                  theme === 'light'
+                    ? 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
+                    : 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}'
+                }
                 attribution='Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
                 maxZoom={16}
               />
-              {/* Esri World Dark Gray Reference Labels */}
+              {/* Esri World Dark / Light Reference Labels */}
               <TileLayer
-                url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}"
+                key={theme === 'light' ? 'light-ref' : 'dark-ref'}
+                url={
+                  theme === 'light'
+                    ? 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}'
+                    : 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}'
+                }
                 attribution=''
                 maxZoom={16}
               />
@@ -248,16 +260,18 @@ export const SeismicMap: React.FC<SeismicMapProps> = ({
           {/* Regional Ranking Sidebar - Signature Liquid Glass Material */}
           <div className="h-[500px] liquid-glass-card p-5 flex flex-col justify-between overflow-hidden relative group">
             {/* Chromatic backlight flare */}
-            <div className="absolute -top-12 -right-12 w-48 h-48 bg-cyan-400/20 rounded-full blur-[60px] pointer-events-none -z-10" />
+            <div className="absolute -top-12 -right-12 w-48 h-48 bg-cyan-400/40 dark:bg-cyan-400/20 rounded-full blur-[60px] pointer-events-none z-0" />
 
             <div>
-              <div className="flex items-center justify-between pb-2 border-b border-white/15">
-                <h4 className="text-xs font-semibold text-white tracking-wide uppercase">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-white/15">
+                <h4 className="text-xs font-bold text-slate-900 dark:text-white tracking-wide uppercase">
                   Top Seismotectonic Belts
                 </h4>
-                <span className="text-[10px] text-slate-300 font-mono">19,688 Quakes</span>
+                <span className="text-xs font-mono font-bold text-cyan-800 dark:text-cyan-200 bg-cyan-500/20 dark:bg-cyan-500/25 border border-cyan-500/40 px-2.5 py-0.5 rounded-full shadow-sm">
+                  19,688 Quakes
+                </span>
               </div>
-              <p className="text-[11px] text-slate-300 mt-1 mb-2.5">
+              <p className="text-[11px] text-slate-700 dark:text-slate-100 mt-1 mb-2.5 font-medium">
                 Click any region to center the map on its focal zone
               </p>
 
@@ -270,20 +284,20 @@ export const SeismicMap: React.FC<SeismicMapProps> = ({
                   >
                     <div>
                       <div className="flex items-center space-x-1.5">
-                        <span className="text-[10px] font-mono text-cyan-300 font-bold">#{idx + 1}</span>
-                        <span className="text-xs font-medium text-slate-100 group-hover:text-cyan-200">
+                        <span className="text-[10px] font-mono text-cyan-700 dark:text-cyan-300 font-bold">#{idx + 1}</span>
+                        <span className="text-xs font-bold text-slate-900 dark:text-slate-100 group-hover:text-cyan-700 dark:group-hover:text-cyan-200">
                           {r.region}
                         </span>
                       </div>
-                      <span className="text-[10px] text-slate-300">
+                      <span className="text-[10px] text-slate-600 dark:text-slate-300 font-medium">
                         Avg: {r.avg_mag} Mw · Depth: {r.avg_depth_km} km
                       </span>
                     </div>
                     <div className="text-right">
-                      <span className="text-xs font-mono font-bold text-white block">
+                      <span className="text-xs font-mono font-bold text-slate-900 dark:text-white block">
                         {r.event_count.toLocaleString()}
                       </span>
-                      <span className="text-[10px] text-cyan-300 font-mono">
+                      <span className="text-[10px] text-cyan-700 dark:text-cyan-300 font-mono font-semibold">
                         {r.pct_of_global}%
                       </span>
                     </div>

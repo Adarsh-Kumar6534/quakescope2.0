@@ -88,32 +88,32 @@ export const ActivityCharts: React.FC<ActivityChartsProps> = ({
       {/* Chart 1: Inquiry: When did the observed event count surge? - Signature Liquid Glass Feature */}
       <div className="liquid-glass-card p-6 lg:p-8 relative overflow-hidden group">
         {/* Environmental chromatic backlight */}
-        <div className="absolute -top-12 left-1/4 w-[500px] h-48 bg-cyan-400/20 rounded-full blur-[80px] pointer-events-none -z-10" />
-        <div className="absolute -top-12 right-12 w-[350px] h-48 bg-rose-500/20 rounded-full blur-[80px] pointer-events-none -z-10" />
+        <div className="absolute -top-12 left-1/4 w-[500px] h-48 bg-cyan-400/40 dark:bg-cyan-400/20 rounded-full blur-[80px] pointer-events-none z-0" />
+        <div className="absolute -top-12 right-12 w-[350px] h-48 bg-rose-500/40 dark:bg-rose-500/20 rounded-full blur-[80px] pointer-events-none z-0" />
 
-        <div className="flex flex-col sm:flex-row sm:items-start justify-between pb-4 border-b border-white/15 gap-3">
+        <div className="flex flex-col sm:flex-row sm:items-start justify-between pb-4 border-b border-slate-200 dark:border-white/15 gap-3">
           <div>
-            <div className="flex items-center space-x-2">
-              <TrendingUp className="w-4 h-4 text-cyan-300" />
-              <span className="text-[10px] font-bold tracking-wider uppercase text-cyan-300 font-mono">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-xl bg-cyan-500/20 dark:bg-cyan-500/25 border border-cyan-500/40 text-cyan-800 dark:text-cyan-300 shadow-sm">
+              <TrendingUp className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
+              <span className="text-xs font-black tracking-wider uppercase font-mono">
                 Temporal Inquiry
               </span>
             </div>
-            <h3 className="text-base sm:text-lg font-semibold text-white tracking-tight mt-1">
+            <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight mt-2">
               When did the observed event count surge?
             </h3>
-            <p className="text-xs text-slate-300 mt-0.5">
+            <p className="text-xs text-slate-700 dark:text-slate-100 mt-0.5 font-medium">
               Monthly seismic event volume & peak magnitude envelope across 13 recorded intervals
             </p>
           </div>
 
           {/* Contextual Badges */}
           <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span className="liquid-glass-pill px-3 py-1 text-rose-200 text-xs font-medium flex items-center space-x-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse" />
+            <span className="px-3.5 py-1.5 rounded-xl font-mono text-xs font-bold text-rose-800 dark:text-rose-200 bg-rose-500/20 dark:bg-rose-500/25 border border-rose-500/45 flex items-center space-x-1.5 shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-rose-500 dark:bg-rose-400 animate-pulse" />
               <span>July 2025 Surge: 2,838 quakes</span>
             </span>
-            <span className="liquid-glass-pill px-3 py-1 text-amber-200 text-xs font-medium">
+            <span className="px-3.5 py-1.5 rounded-xl font-mono text-xs font-bold text-amber-800 dark:text-amber-200 bg-amber-500/20 dark:bg-amber-500/25 border border-amber-500/45 shadow-sm">
               Jan 2026: Single-Day Endpoint
             </span>
           </div>

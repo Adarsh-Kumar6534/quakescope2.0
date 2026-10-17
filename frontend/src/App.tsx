@@ -9,6 +9,7 @@ import { SeismicMap } from './components/SeismicMap';
 import { StrongestEventsTable } from './components/StrongestEventsTable';
 import { MLInsights } from './components/MLInsights';
 import { MethodologyModal } from './components/MethodologyModal';
+import { QuakeScopeLogo } from './components/QuakeScopeLogo';
 import {
   Activity,
   AlertTriangle,
@@ -22,6 +23,25 @@ export function App() {
   const [error, setError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState('overview');
   const [isAuditModalOpen, setIsAuditModalOpen] = useState(false);
+  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
+    const saved = localStorage.getItem('quakescope_theme');
+    return saved === 'light' ? 'light' : 'dark';
+  });
+
+  useEffect(() => {
+    if (theme === 'light') {
+      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+    }
+    localStorage.setItem('quakescope_theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
 
   useEffect(() => {
     loadDashboardData()
@@ -87,7 +107,7 @@ export function App() {
   }
 
   return (
-    <div className="relative min-h-screen text-slate-100 flex flex-col selection:bg-cyan-500/25 selection:text-white">
+    <div className={`relative min-h-screen flex flex-col selection:bg-cyan-500/25 ${theme === 'light' ? 'text-slate-900 selection:text-slate-900' : 'text-slate-100 selection:text-white'}`}>
       {/* Background Atmosphere & Subtle Grid */}
       <div className="seismic-atmosphere" />
       <div className="seismic-grid-pattern" />
@@ -99,6 +119,8 @@ export function App() {
         setActiveTab={setActiveTab}
         kpiData={data.kpisAndCleaning}
         onOpenAudit={() => setIsAuditModalOpen(true)}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
 
       {/* Primary Main Content */}
@@ -263,6 +285,7 @@ export function App() {
           <SeismicMap
             strongestEvents={data.strongestEvents}
             topRegions={data.topRegions}
+            theme={theme}
           />
         )}
 
@@ -290,8 +313,8 @@ export function App() {
       {/* Fluid Glass Footer */}
       <footer className="relative z-10 border-t border-white/10 py-8 mt-12 glass-nav text-xs text-slate-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center space-x-2">
-            <Activity className="w-4 h-4 text-cyan-400" />
+          <div className="flex items-center space-x-2.5">
+            <QuakeScopeLogo size="sm" theme={theme} />
             <span className="font-semibold text-slate-200">QuakeScope</span>
             <span className="text-slate-500">·</span>
             <span>Distributed Seismic Analysis & Earthquake Pattern Classification</span>
